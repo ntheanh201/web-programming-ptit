@@ -1,0 +1,143 @@
+.area-detail {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.area-detail .img-product {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+  overflow: hidden;
+  height: 50vh;
+}
+.area-detail .img-product .img-icon {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.area-detail .img-product .img-icon img {
+  display: block;
+  max-width: 50%;
+}
+.area-detail .img-product .img-main {
+  overflow: scroll;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+}
+.area-detail .img-product .img-main img {
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+  display: block;
+  max-width: 100%;
+}
+.area-detail .content-product {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.area-detail .content-product h3 {
+  margin: 10px auto 5px auto;
+}
+.area-detail .content-product .star-icon {
+  margin-bottom: 20px;
+}
+.area-detail .content-product .star-icon i {
+  color: gold;
+}
+.area-detail .content-product p {
+  margin: 10px;
+  text-align: left;
+}
+.area-detail .content-product .box-buy {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.area-detail .content-product .box-buy .fieldset .qty {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  width: 91px;
+}
+.area-detail .content-product .box-buy .fieldset .qty .label {
+  float: left;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.area-detail .content-product .box-buy .fieldset .qty .label span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.area-detail .content-product .box-buy .fieldset .qty .control {
+  width: 53px;
+}
+.area-detail .content-product .box-buy .fieldset .qty .control #qty {
+  text-align: center;
+  margin-right: 0;
+  border-color: #ddd;
+  height: 30px;
+  padding: 0;
+  width: 38px;
+}
+.area-detail .content-product .box-buy .fieldset .qty .control .control-qty {
+  position: relative;
+}
+.area-detail .content-product .box-buy .fieldset .qty .control .control-qty .quantity-controls.quantity-plus {
+  background-image: url(../images/btn-plus.png);
+}
+.area-detail .content-product .box-buy .fieldset .qty .control .control-qty .quantity-controls.quantity-minus {
+  background-image: url(../images/btn-minus.png);
+  position: absolute;
+  right: 0px;
+  bottom: -30px;
+}
+.area-detail .content-product .box-buy .fieldset .qty .control .control-qty .quantity-controls {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  float: left;
+  background-color: #999999;
+  border: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+.area-detail .content-product .box-buy .number {
+  margin: 20px;
+}
+.area-detail .content-product .box-buy .number input {
+  width: 46px;
+  height: 28px;
+}
+.area-detail .content-product .box-buy .btn-buy {
+  width: 91px;
+  height: 34px;
+  margin: 10px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 40px; */
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #f54b24;
+}
+.area-detail .content-product .box-buy .btn-buy:hover {
+  background-color: #f54b24;
+  color: #fff;
+}
+.area-detail .content-product .box-buy button, .area-detail .content-product .box-buy button:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=productDetail.css.map */
