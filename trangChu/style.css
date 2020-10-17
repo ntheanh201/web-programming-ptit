@@ -141,7 +141,7 @@ header .nav-main .fas.fa-chevron-down {
   font-size: 10px;
 }
 header .nav-main .menu-small {
-  background-color: #D16FFF;
+  background-color: #1484e0;
   margin: 20px;
   width: 80%;
   position: absolute;
@@ -166,13 +166,14 @@ header .nav-main .menu-small ul .submenu {
   background: #fff;
   left: 20px;
   width: 137px;
+  border-radius: 5px;
 }
 header .nav-main .menu-small ul .submenu li {
   text-align: left;
   margin: 10px auto 20px 15px;
 }
 header .nav-main .menu-small ul .submenu li a {
-  color: aqua;
+  color: #000;
   padding: 0;
 }
 header .nav-main .menu-small ul .submenu li a:hover {
@@ -182,20 +183,22 @@ header .nav-main .menu-small ul .submenu li a:hover {
 header .nav-main .menu-small ul .submenu1 {
   display: none !important;
   position: absolute;
-  top: 27px;
-  display: flex;
-  flex-direction: column;
-  z-index: 100;
+  width: 135px;
+  top: 29px;
+  left: 38px;
+  padding: 10px 0 10px 10px;
+  list-style: none;
+  z-index: 10;
+  line-height: 2;
+  border-radius: 7px;
   background: #fff;
-  left: 20px;
-  width: 137px;
 }
 header .nav-main .menu-small ul .submenu1 li {
   text-align: left;
   margin: 10px auto 20px 15px;
 }
 header .nav-main .menu-small ul .submenu1 li a {
-  color: aqua;
+  color: #000;
   padding: 0;
 }
 header .nav-main .menu-small ul .submenu1 li a:hover {
@@ -321,9 +324,10 @@ header .nav-main .title-nav-main li.blog-about1 .submenu1 {
   display: none !important;
   position: absolute;
   width: 135px;
-  background: #fff;
-  top: 23px;
-  left: 38px;
+  background: aqua;
+  top: 29px;
+  left: 0px;
+  width: 100%;
   padding: 10px 0 10px 10px;
   list-style: none;
   z-index: 10;
@@ -353,8 +357,8 @@ header .nav-main .title-nav-main li.blog-about .submenu {
   display: none !important;
   position: absolute;
   width: 135px;
-  background: #fff;
-  top: 23px;
+  background: aqua;
+  top: 29px;
   left: 19px;
   padding: 10px 0 10px 10px;
   list-style: none;
@@ -433,7 +437,7 @@ main section.area-advantage .step-advantage {
   min-width: 260px;
   margin: 10px;
   padding: 20px;
-  background-color: #E9A354;
+  background-color: #00c174;
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -520,6 +524,9 @@ footer .footer-top .footer-cates .title-cates li a {
   text-decoration: none;
   color: #fff;
 }
+footer .footer-top .footer-cates .title-cates li:hover a {
+  color: #f54b24;
+}
 footer .footer-middle {
   text-align: center;
   min-height: 300px;
@@ -593,8 +600,9 @@ footer .copyright {
   position: fixed !important;
   z-index: 1000;
   top: 0;
-  background-image: url(./public/img/hero2.png);
+  background-color: #FFBE4C;
+  /* background-image: url(../public/img/hero2.png); */
   background-size: contain;
 }
 
-/*# sourceMappingURL=style.css.map */
+
