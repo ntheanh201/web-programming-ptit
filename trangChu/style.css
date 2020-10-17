@@ -324,7 +324,7 @@ header .nav-main .title-nav-main li.blog-about1 .submenu1 {
   display: none !important;
   position: absolute;
   width: 135px;
-  background: aqua;
+  background: #fff;
   top: 29px;
   left: 0px;
   width: 100%;
@@ -357,7 +357,7 @@ header .nav-main .title-nav-main li.blog-about .submenu {
   display: none !important;
   position: absolute;
   width: 135px;
-  background: aqua;
+  background: #fff;
   top: 29px;
   left: 19px;
   padding: 10px 0 10px 10px;
