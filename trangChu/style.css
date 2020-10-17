@@ -486,7 +486,7 @@ main section.area-specially .area-right .onbottom img {
 footer {
   width: 100%;
   padding: 10px 50px;
-  background-image: url("./public/img/bg-footer.jpg");
+  background-image: url("../public/img/bg-footer.jpg");
   background-size: cover;
 }
 footer p.scroll-top i {
