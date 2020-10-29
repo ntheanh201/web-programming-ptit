@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
   box-sizing: border-box;
 }
 
-::after, ::before {
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -37,6 +39,7 @@ i {
 p {
   font-family: "Mulish", sans-serif;
   font-size: 16px;
+  margin-bottom: 0 !important;
 }
 
 a {
@@ -81,15 +84,59 @@ body {
     transition: 0.6s;
   }
 }
+
+.formLogin {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  display: none !important;
+}
+
+.formLogin .wapper {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.formLogin .main-form-login {
+  width: 50%;
+  height: 350px;
+  padding: 10px 20px !important;
+  margin-top: 100px;
+  background-color: #fff;
+  z-index: 105;
+  border-radius: 10px;
+  padding: 10px !important;
+  position: relative;
+  left: 50%;
+  margin-left: -25%;
+}
+
+h3 {
+  text-align: center;
+}
+
 header {
   width: 100%;
 }
+
 header .title-header-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid;
 }
+
 header .title-header-main .hotline {
   font-size: 22px;
   width: 30%;
@@ -99,9 +146,11 @@ header .title-header-main .hotline {
   padding: 5px;
   display: flex;
 }
+
 header .title-header-main .hotline i {
   margin-right: 10px;
 }
+
 header .title-header-main .img-main {
   width: 60%;
   padding: 20px;
@@ -109,16 +158,19 @@ header .title-header-main .img-main {
   justify-content: center;
   align-items: center;
 }
+
 header .title-header-main .img-main img {
   width: 37%;
   cursor: pointer;
 }
+
 header .title-header-main .giohang {
   width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header .title-header-main .giohang i {
   margin: 10px;
   color: #fff;
@@ -130,16 +182,20 @@ header .title-header-main .giohang i {
   background-color: #f54b24;
   cursor: pointer;
 }
+
 header .title-header-main .giohang img {
   margin: 10px;
 }
+
 header .nav-main {
   position: relative;
   width: 100%;
 }
+
 header .nav-main .fas.fa-chevron-down {
   font-size: 10px;
 }
+
 header .nav-main .menu-small {
   background-color: #1484e0;
   margin: 20px;
@@ -152,10 +208,12 @@ header .nav-main .menu-small {
   left: 50%;
   margin-left: -40%;
 }
+
 header .nav-main .menu-small ul {
   display: flex;
   flex-direction: column;
 }
+
 header .nav-main .menu-small ul .submenu {
   display: none !important;
   position: absolute;
@@ -168,18 +226,23 @@ header .nav-main .menu-small ul .submenu {
   width: 137px;
   border-radius: 5px;
 }
+
 header .nav-main .menu-small ul .submenu li {
   text-align: left;
   margin: 10px auto 20px 15px;
 }
+
 header .nav-main .menu-small ul .submenu li a {
   color: #000;
   padding: 0;
+  cursor: pointer;
 }
+
 header .nav-main .menu-small ul .submenu li a:hover {
   color: #D16FFF;
   padding-left: 10px;
 }
+
 header .nav-main .menu-small ul .submenu1 {
   display: none !important;
   position: absolute;
@@ -193,34 +256,43 @@ header .nav-main .menu-small ul .submenu1 {
   border-radius: 7px;
   background: #fff;
 }
+
 header .nav-main .menu-small ul .submenu1 li {
   text-align: left;
   margin: 10px auto 20px 15px;
 }
+
 header .nav-main .menu-small ul .submenu1 li a {
   color: #000;
   padding: 0;
 }
+
 header .nav-main .menu-small ul .submenu1 li a:hover {
   color: #D16FFF;
   padding-left: 10px;
 }
+
 header .nav-main .menu-small ul li {
   list-style: none;
   margin: 0 10px;
 }
+
 header .nav-main .menu-small ul li.blog1 {
   position: relative;
 }
+
 header .nav-main .menu-small ul li.blog1:hover .submenu1 {
   display: block !important;
 }
+
 header .nav-main .menu-small ul li.blog {
   position: relative;
 }
+
 header .nav-main .menu-small ul li.blog:hover .submenu {
   display: block !important;
 }
+
 header .nav-main .menu-small ul li a {
   text-decoration-line: none;
   color: #fff;
@@ -234,6 +306,7 @@ header .nav-main .menu-small ul li a {
   transition: 0.3s;
   text-transform: capitalize;
 }
+
 header .nav-main .menu-small ul .button-header {
   width: 113px;
   height: 51px;
@@ -246,18 +319,22 @@ header .nav-main .menu-small ul .button-header {
   cursor: pointer;
   margin-bottom: 10px;
 }
+
 header .nav-main .menu-small ul .button-header:hover {
   background-color: #FF9F67;
 }
+
 header .nav-main .menu-small ul .margin-left {
   border: none;
   background: #FF9F67;
 }
+
 header .nav-main .menu-small ul .margin-left:hover {
   margin-left: 37px;
   border: none;
   background-color: #AE59FF !important;
 }
+
 header .nav-main div.fas .fas.fa-search {
   position: absolute;
   right: 10px;
@@ -269,6 +346,7 @@ header .nav-main div.fas .fas.fa-search {
   align-items: center;
   cursor: pointer;
 }
+
 header .nav-main div.fas .form-search {
   display: none !important;
   position: absolute;
@@ -276,6 +354,7 @@ header .nav-main div.fas .form-search {
   top: 45px;
   z-index: 20;
 }
+
 header .nav-main div.fas .form-search input[type=text] {
   cursor: pointer;
   width: 100%;
@@ -288,15 +367,18 @@ header .nav-main div.fas .form-search input[type=text] {
   background-repeat: no-repeat;
   padding: 12px 20px 12px 12px;
 }
-header .nav-main div.fas:hover > .form-search {
+
+header .nav-main div.fas:hover>.form-search {
   display: block !important;
 }
+
 header .nav-main .title-nav-main {
   display: flex;
   justify-content: center;
   margin: 2px 20px;
   padding: 10px;
 }
+
 header .nav-main .title-nav-main li.title {
   position: relative;
   list-style: none;
@@ -304,22 +386,28 @@ header .nav-main .title-nav-main li.title {
   border-right: 1px solid #7e7a79;
   cursor: pointer;
 }
+
 header .nav-main .title-nav-main li.title img {
   position: absolute;
   top: -17px;
 }
+
 header .nav-main .title-nav-main li.title:hover {
   background-color: #f54b24;
 }
+
 header .nav-main .title-nav-main li.title:hover a {
   color: #fff;
 }
+
 header .nav-main .title-nav-main li.blog-about1 {
   position: relative;
 }
+
 header .nav-main .title-nav-main li.blog-about1 a {
   color: #f54b24;
 }
+
 header .nav-main .title-nav-main li.blog-about1 .submenu1 {
   display: none !important;
   position: absolute;
@@ -333,26 +421,33 @@ header .nav-main .title-nav-main li.blog-about1 .submenu1 {
   z-index: 10;
   line-height: 2;
 }
+
 header .nav-main .title-nav-main li.blog-about1 .submenu1 li a {
   color: #000;
 }
+
 header .nav-main .title-nav-main li.blog-about1 .submenu1 li:hover {
   border-bottom: 1px solid;
   padding-left: 25px;
   background-color: #22fd35;
 }
+
 header .nav-main .title-nav-main li.blog-about1 .submenu1 li:hover a {
   color: #fff;
 }
+
 header .nav-main .title-nav-main .blog-about1:hover .submenu1 {
   display: block !important;
 }
+
 header .nav-main .title-nav-main li.blog-about {
   position: relative;
 }
+
 header .nav-main .title-nav-main li.blog-about a {
   color: #f54b24;
 }
+
 header .nav-main .title-nav-main li.blog-about .submenu {
   display: none !important;
   position: absolute;
@@ -365,17 +460,21 @@ header .nav-main .title-nav-main li.blog-about .submenu {
   z-index: 10;
   line-height: 2;
 }
+
 header .nav-main .title-nav-main li.blog-about .submenu li a {
   color: #000;
 }
+
 header .nav-main .title-nav-main li.blog-about .submenu li:hover {
   border-bottom: 1px solid;
   padding-left: 25px;
   background-color: #22fd35;
 }
+
 header .nav-main .title-nav-main li.blog-about .submenu li:hover a {
   color: #fff;
 }
+
 header .nav-main .title-nav-main .blog-about:hover .submenu {
   display: block !important;
 }
@@ -384,25 +483,31 @@ main {
   width: 100%;
   box-sizing: border-box;
 }
+
 main section.courses {
   width: 100%;
 }
+
 main section.courses img {
   width: 100%;
 }
+
 main section.area-show-now {
   width: 100%;
   padding: 5px;
 }
+
 main section.area-show-now .step-area-show {
   display: flex;
   justify-content: center;
 }
+
 main section.area-show-now .step-area-show .step-main {
   width: 33%;
   padding: 7px;
   text-align: center;
 }
+
 main section.area-show-now .step-area-show .step-main .img {
   width: 100%;
   position: relative;
@@ -410,9 +515,11 @@ main section.area-show-now .step-area-show .step-main .img {
   justify-content: center;
   align-items: center;
 }
+
 main section.area-show-now .step-area-show .step-main .img img {
   width: 100%;
 }
+
 main section.area-show-now .step-area-show .step-main .img a {
   padding: 6px 16px;
   background-color: #f54b24;
@@ -422,15 +529,18 @@ main section.area-show-now .step-area-show .step-main .img a {
   border-radius: 5px;
   cursor: pointer;
 }
+
 main section.area-show-now .step-area-show .step-main .img a:hover {
   color: #f54b24;
   background-color: #fff;
 }
+
 main section.area-advantage {
   margin: 20px 89px;
   display: flex;
   justify-content: center;
 }
+
 main section.area-advantage .step-advantage {
   cursor: pointer;
   width: 21%;
@@ -442,47 +552,59 @@ main section.area-advantage .step-advantage {
   align-items: center;
   border-radius: 5px;
 }
+
 main section.area-advantage .step-advantage i {
   color: #f54b24;
   width: 10%;
   margin-right: 10px;
 }
+
 main section.area-advantage .step-advantage .title {
   color: #fff;
 }
+
 main section.area-advantage .step-advantage:hover {
   background-color: #f54b24;
 }
+
 main section.area-advantage .step-advantage:hover i {
   color: #fff;
 }
+
 main section.area-specially {
   margin: 20px 89px;
   display: flex;
   justify-content: center;
 }
+
 main section.area-specially .area-left {
   width: 50%;
   padding: 10px;
 }
+
 main section.area-specially .area-left img {
   width: 100%;
 }
+
 main section.area-specially .area-right {
   width: 50%;
   padding: 10px;
 }
+
 main section.area-specially .area-right .ontop {
   width: 100%;
 }
+
 main section.area-specially .area-right .ontop img {
   width: 100%;
 }
+
 main section.area-specially .area-right .onbottom {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
+
 main section.area-specially .area-right .onbottom img {
   width: 50%;
 }
@@ -493,6 +615,7 @@ footer {
   background-image: url("../public/img/bg-footer.jpg");
   background-size: cover;
 }
+
 footer p.scroll-top i {
   position: fixed;
   bottom: 150px;
@@ -502,37 +625,45 @@ footer p.scroll-top i {
   border-radius: 50%;
   z-index: 50;
 }
+
 footer .footer-top {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 footer .footer-top .footer-cates {
   border-bottom: 1px solid;
   display: flex;
   justify-content: center;
 }
+
 footer .footer-top .footer-cates .title-cates {
   display: flex;
 }
+
 footer .footer-top .footer-cates .title-cates li {
   list-style: none;
   color: #fff;
   margin: 10px;
 }
+
 footer .footer-top .footer-cates .title-cates li a {
   text-decoration: none;
   color: #fff;
 }
+
 footer .footer-top .footer-cates .title-cates li:hover a {
   color: #f54b24;
 }
+
 footer .footer-middle {
   text-align: center;
   min-height: 300px;
   line-height: 3;
   color: #fff;
 }
+
 footer .copyright {
   color: #fff;
   border-top: 1px solid;
@@ -545,11 +676,13 @@ footer .copyright {
     width: 70%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   main section.area-advantage {
     flex-wrap: wrap;
   }
 }
+
 @media only screen and (max-width: 425px) {
   .title-nav-main {
     display: none !important;
@@ -558,15 +691,19 @@ footer .copyright {
   header .title-header-main {
     height: 83px;
   }
+
   header .title-header-main .giohang {
     width: 50%;
   }
+
   header .title-header-main .giohang .fas.fa-bars {
     display: block !important;
   }
+
   header .title-header-main .hotline {
     display: none !important;
   }
+
   header .title-header-main .img-main {
     width: 50%;
   }
@@ -579,6 +716,7 @@ footer .copyright {
     display: none;
   }
 }
+
 .show {
   display: block !important;
   animation: scroll ease-in 0.7s;
@@ -591,7 +729,9 @@ footer .copyright {
   to {
     top: 100px;
   }
+
 }
+
 .hidden {
   display: none !important;
 }
@@ -601,8 +741,5 @@ footer .copyright {
   z-index: 1000;
   top: 0;
   background-color: #FFBE4C;
-  /* background-image: url(../public/img/hero2.png); */
   background-size: contain;
 }
-
-

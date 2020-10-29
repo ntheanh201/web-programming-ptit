@@ -10,6 +10,17 @@ function clickMenuIcon() {
   }
 }
 
+function showFormLogin(){
+  console.log('login');
+  var form = document.getElementById("formLogin");
+  var arr = form.className.split(" ");
+  if (arr.indexOf("show") == -1) {
+    form.classList.add("show");
+  } else {
+    form.classList.remove("show");
+  } 
+}
+
 window.onscroll = function () {
   scrollFunc();
 };
@@ -38,10 +49,10 @@ function goTop() {
   });
 }
 
-$(window).on('load', function(event) {
-  setTimeout(() => {
-    $('.preloader').addClass('hidden')
-  }, 1000);
-  // $('.preloader').delay(1000).fadeOut('fast');
-});
+// $(window).on('load', function(event) {
+//   setTimeout(() => {
+//     $('.preloader').addClass('hidden')
+//   }, 1000);
+//   // $('.preloader').delay(1000).fadeOut('fast');
+// });
 
