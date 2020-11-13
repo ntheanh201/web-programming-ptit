@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: #F0F2F5; 
+}
 .content-product-page {
   display: flex;
   margin-top: 30px;
@@ -40,6 +43,7 @@
 }
 .content-product-page .area-products .form-product .img img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .content-product-page .area-products .form-product .img .sale {
   top: 0;
