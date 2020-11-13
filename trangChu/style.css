@@ -4,6 +4,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   box-sizing: border-box;
+
 }
 
 ::after,
@@ -165,6 +166,7 @@ h3 {
 
 header {
   width: 100%;
+  background-color: #F0F2F5;  
 }
 
 header .title-header-main {
@@ -420,8 +422,9 @@ header .nav-main .title-nav-main li.title {
   position: relative;
   list-style: none;
   padding: 5px 15px 5px;
-  border-right: 1px solid #7e7a79;
+  /* border-right: 1px solid #7e7a79; */
   cursor: pointer;
+  border-radius: 5px;
 }
 
 header .nav-main .title-nav-main li.title img {
@@ -433,8 +436,9 @@ header .nav-main .title-nav-main li.title:hover {
   background-color: #f54b24;
 }
 
-header .nav-main .title-nav-main li.title:hover a {
+header .nav-main .title-nav-main li.title:hover > a {
   color: #fff;
+  background-color: #f54b24;
 }
 
 header .nav-main .title-nav-main li.blog-about1 {
@@ -514,6 +518,9 @@ header .nav-main .title-nav-main li.blog-about .submenu li:hover a {
 
 header .nav-main .title-nav-main .blog-about:hover .submenu {
   display: block !important;
+  width: 100%;
+  left: 0;
+  top: 29px;
 }
 
 main {
@@ -707,6 +714,9 @@ footer .copyright {
   text-align: center;
   line-height: 3;
 }
+header .title-header-main .fas.fa-bars {
+  display: none !important;
+}
 
 @media only screen and (max-width: 1024px) {
   header .title-header-main .img-main img {
@@ -733,7 +743,7 @@ footer .copyright {
     width: 50%;
   }
 
-  header .title-header-main .giohang .fas.fa-bars {
+  header .title-header-main .fas.fa-bars {
     display: block !important;
   }
 
