@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <Link rel="shortcut icon" type="image/x-icon" href="../public/img/love.png">
-    <!-- <link rel="stylesheet" href="../styles/mainStyles.css" /> -->
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="./style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
   <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
@@ -15,7 +14,7 @@
   <title>Pet Web</title>
   <style>
     html {
-      scroll-behavior: smooth;
+      scroll-behavior: smooth;  
     }
   </style>
 </head>
@@ -35,7 +34,39 @@
           <label for="password">Password</label>
           <input type="password" required class="form-control">
         </div>
+        <p class="text-regis">
+        <c:url value="/user/adduser" var="addUrl"></c:url>
+        Don't have an account? <a style="cursor: pointer;" onclick="showFormRegister()">Sign up here!</a>
+        </p>
         <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- formRegister -->
+  <div class="formRegister" id="formRegister">
+    <div class="wapper" onclick="showFormRegister()"></div>
+    <div class="main-form-login">
+      <h3>Chào mừng bạn đến với Shop Pet</h3>
+      <form action="" class="login">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="text" placeholder="Email của bạn" required class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="userName">UserName</label>
+          <input type="text" required class="form-control" placeholder="User name">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" required class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="RePassword">Nhập lại Password</label>
+          <input type="password" required class="form-control" placeholder="password again">
+        </div>
+        <p class="text-regis">
+        <button type="submit" class="btn btn-primary">Register</button>
       </form>
     </div>
   </div>
@@ -51,6 +82,7 @@
       </div>
       <div class="giohang">
         <i class="fas fa-user" onclick="showFormLogin()"></i>
+        <i class="fas fa-registered" onclick="showFormRegister()"></i>
         <i class="fas fa-shopping-cart"></i>
         <i class="fas fa-bars" onclick="clickMenuIcon()"></i>
         <img src="../public/img/user.png" alt="register" style="width: 23px; cursor: pointer;" />

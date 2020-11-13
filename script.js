@@ -11,7 +11,6 @@ function clickMenuIcon() {
 }
 
 function showFormLogin(){
-  console.log('login');
   var form = document.getElementById("formLogin");
   var arr = form.className.split(" ");
   if (arr.indexOf("show") == -1) {
@@ -19,8 +18,27 @@ function showFormLogin(){
   } else {
     form.classList.remove("show");
   } 
+  var formRegis = document.getElementById("formRegister");
+  var arr2 = formRegis.className.split(" ");
+  if (arr2.indexOf("show") !== -1) {
+    formRegis.classList.remove("show");
+  } 
 }
 
+function showFormRegister(){
+  var formRegis = document.getElementById("formRegister");
+  var arr = formRegis.className.split(" ");
+  if (arr.indexOf("show") == -1) {
+    formRegis.classList.add("show");
+  } else {
+    formRegis.classList.remove("show");
+  } 
+  var form = document.getElementById("formLogin");
+  var arr2 = form.className.split(" ");
+  if (arr2.indexOf("show") !== -1) {
+    form.classList.remove("show");
+  } 
+}
 window.onscroll = function () {
   scrollFunc();
 };

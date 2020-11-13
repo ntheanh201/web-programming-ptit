@@ -4,93 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test</title>
-  <style>
-
-    img {
-      display: block;
-      max-width: 100%;
-    }
-    .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-gap: 10px;
-  overflow: hidden;
-  height: 100vh; 
-  @media screen and (min-width: $large) {
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: auto;
-  }
-}
-
-.gallery {
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  @media screen and (min-width: $large) {
-    display: block;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-  }
-}
-.gallery__img {
-  scroll-snap-align: start;
-  margin-bottom: 10px;
-  min-height: 100vh;
-  object-fit: cover;
-}
-.lil-nav {
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.lil-nav a {
-  height: 200px;
-  display: flex;
-  margin-bottom: 10px;
-  @media screen and (min-width: $large) {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: block;
-    grid-row-start: auto;
-  }
-}
-.lil-nav__img {
-  object-fit: cover;
-  filter: saturate(0);
-  transition: 0.3s ease all;
-}
-
-.lil-nav__img:hover {
-  transform: scale(1.05);
-  filter: saturate(1);
-}
-
-  </style>
+  <link rel='stylesheet' href='./styleTest.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <nav class="lil-nav">
-      <a href="#image-1">
-        <img class="lil-nav__img" src="./public/img/sanpham.jpg" alt="Yosemite" />
-      </a>
-      <a href="#image-2">
-        <img class="lil-nav__img" src="./public/img/sanpham2.jpg" alt="Basketball hoop" />
-      </a>
-      <a href="#image-3">
-        <img class="lil-nav__img" src="./public/img/sanpham3.jpg" alt="Basketball hoop" />
-      </a>
-      <!-- more images go here -->
-    </nav>
-    <div class="gallery">
-      <img class="gallery__img" id="image-1" src="./public/img/sanpham.jpg" alt="Yosemite" />
-      <img class="gallery__img" id="image-2" src="./public/img/sanpham2.jpg" alt="Basketball hoop" />
-      <img class="gallery__img" id="image-3" src="./public/img/sanpham3.jpg" alt="Basketball hoop" />
-      <!-- more images go here -->
+  <form action="${addPrdUrl}" method="post" enctype="multipart/form-data" class="form-add-product">
+    <div class="form-group">
+      <label for="name">Name Product</label>
+      <input type="text" name="name" placeholder="Tên sản phẩm" required class="form-control">
     </div>
-  </div>
+    <div class="form-group">
+      <label for="code">Code</label>
+      <input type="text" name="code" required class="form-control" placeholder="Mã sản phẩm">
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <input type="text" name="category" required class="form-control" placeholder="...">
+    </div>
+    <div class="form-group">
+      <label for="brief">Brief</label>
+      <input type="text" name="brief" required class="form-control" placeholder="Brief Product ...">
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="text" name="price" required class="form-control" placeholder="Giá sản phẩm ...">
+    </div>
+    <div class="form-group">
+      <label for="image">Image</label>
+      <input type="file" placeholder="image" name="image" required class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea name="description" required class="form-control" rows="4" cols="50"></textarea>
+    </div>
+    <div class="form-group">
+      <input class="text" type="hidden" name="role" value="ADMIN" />
+    </div>
+    <p class="text-regis">
+      <button type="submit" class="btn btn-primary"> Create Product </button>
+  </form>
 </body>
 
 </html>
