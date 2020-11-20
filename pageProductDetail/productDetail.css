@@ -87,16 +87,37 @@
 .area-detail .content-product .box-buy .fieldset .qty .control .control-qty {
   position: relative;
 }
-.area-detail .content-product .box-buy .fieldset .qty .control .control-qty .quantity-controls.quantity-plus {
+.area-detail
+  .content-product
+  .box-buy
+  .fieldset
+  .qty
+  .control
+  .control-qty
+  .quantity-controls.quantity-plus {
   background-image: url(../images/btn-plus.png);
 }
-.area-detail .content-product .box-buy .fieldset .qty .control .control-qty .quantity-controls.quantity-minus {
+.area-detail
+  .content-product
+  .box-buy
+  .fieldset
+  .qty
+  .control
+  .control-qty
+  .quantity-controls.quantity-minus {
   background-image: url(../images/btn-minus.png);
   position: absolute;
   right: 0px;
   bottom: -30px;
 }
-.area-detail .content-product .box-buy .fieldset .qty .control .control-qty .quantity-controls {
+.area-detail
+  .content-product
+  .box-buy
+  .fieldset
+  .qty
+  .control
+  .control-qty
+  .quantity-controls {
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -136,7 +157,8 @@
   background-color: #f54b24;
   color: #fff;
 }
-.area-detail .content-product .box-buy button, .area-detail .content-product .box-buy button:focus {
+.area-detail .content-product .box-buy button,
+.area-detail .content-product .box-buy button:focus {
   outline: none;
 }
 

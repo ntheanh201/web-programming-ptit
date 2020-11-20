@@ -1,13 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   box-sizing: border-box;
 }
 
 main {
-  background-color: #F0F2F5; 
+  background-color: #f0f2f5;
 }
 .content-product-page {
   display: flex;
@@ -54,7 +53,7 @@ main {
   display: flex;
   font-size: 13px;
   position: absolute;
-  background: #D95336;
+  background: #d95336;
   width: 36px;
   height: 32px;
   color: #fff;
@@ -74,7 +73,7 @@ main {
   right: 0;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
-  border-top: 10px solid #D95336;
+  border-top: 10px solid #d95336;
 }
 .content-product-page .area-products .form-product .content {
   text-align: center;
@@ -92,10 +91,22 @@ main {
   justify-content: space-between;
   text-align: center;
 }
-.content-product-page .area-products .form-product .content .price-content .price-detail .price {
+.content-product-page
+  .area-products
+  .form-product
+  .content
+  .price-content
+  .price-detail
+  .price {
   font-size: 19px;
 }
-.content-product-page .area-products .form-product .content .price-content .price-detail p {
+.content-product-page
+  .area-products
+  .form-product
+  .content
+  .price-content
+  .price-detail
+  p {
   font-size: 10px;
   background-color: red;
   padding: 2px;
@@ -124,13 +135,14 @@ main {
   color: #fff;
 }
 
-button, button:focus {
+button,
+button:focus {
   outline: none;
 }
 
 .amount {
   display: flex;
-} 
+}
 
 @media only screen and (max-width: 325px) {
   .content-product-page .quang-cao {
