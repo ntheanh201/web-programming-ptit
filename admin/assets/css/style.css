@@ -64,7 +64,6 @@ pre {
 .nav ul li {
   display: inline-block;
   *display: inline;
-  zoom: 1;
 }
 .nav ul li a {
   background: transparent;

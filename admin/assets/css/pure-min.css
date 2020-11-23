@@ -15,8 +15,6 @@ table {
 }
 html {
   font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -137,7 +135,6 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
   cursor: pointer;
 }
 button[disabled],
@@ -197,22 +194,11 @@ legend {
   letter-spacing: -0.31em;
   text-rendering: optimizespeed;
   font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
   align-content: flex-start;
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  table .pure-g {
-    display: block;
-  }
-}
+
 .opera-only :-o-prefocus,
 .pure-g {
   word-spacing: -0.43em;
@@ -269,11 +255,8 @@ legend {
   vertical-align: top;
   text-rendering: auto;
   display: inline-block;
-  zoom: 1;
 }
-.pure-g [class*="pure-u"] {
-  font-family: sans-serif;
-}
+
 .pure-u-1-24 {
   width: 4.1667%;
 }
@@ -378,15 +361,10 @@ legend {
 }
 .pure-button {
   display: inline-block;
-  zoom: 1;
   white-space: nowrap;
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 .pure-button::-moz-focus-inner {
@@ -816,7 +794,6 @@ a.pure-button-selected {
 .pure-menu-horizontal .pure-menu-item,
 .pure-menu-horizontal .pure-menu-separator {
   display: inline-block;
-  zoom: 1;
   vertical-align: middle;
 }
 .pure-menu-item .pure-menu-item {
