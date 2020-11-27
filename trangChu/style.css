@@ -798,3 +798,7 @@ header .title-header-main .fas.fa-bars {
   background-color: #FFBE4C;
   background-size: contain;
 }
+p, ul {
+  font-size: 17px;
+  line-height: 34px;
+}
