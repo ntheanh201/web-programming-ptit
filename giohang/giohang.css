@@ -1,315 +1,425 @@
-* {
-    box-sizing: border-box;
-}
-
-.title-main {
-    width: 100%;
-    height: 100px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: auto;
-}
-
-.title-main .icon-home {
-    font-size: 40px;
-}
-
-.title-main .icon-home .fa-home {
-    color: #fa3008;
-}
-
-.title-main .icon-home a {
-    text-decoration: none;
-}
-
-.title-main .gio-hang {
-    font-size: 40px;
-    padding-left: 10px;
-    margin: 5px;
-    border-left: 3px solid #ee532d;
-    color: #ee532d;
-    font-weight: 600;
-}
-
-.main-container {
-    padding: 40px;
-    width: 100%;
-    float: left;
-    min-height: 300px;
-}
-
-.main-cart-page {
-    background: #fff;
-}
-
-section,
-div {
-    display: block;
-}
-
-.cart-container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.main-container .col-main {
-    float: none;
-    width: auto;
-}
-
-.margin-bottom {
-    margin-bottom: 0 !important;
-}
-
-.scroll {
-    margin-top: 20px;
-    overflow: hidden;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
-}
-
-.cart-thead {
-    background: #fbfbfb;
-    font-weight: bold;
-    font-size: 0.9em;
-    width: 100%;
-    border: 1px solid #ebebeb;
-    clear: both;
-    float: left;
-    min-width: 600px;
-}
-
-.cart-thead div {
-    float: left;
-    padding: 10px 0;
-    color: #333;
-    text-align: center;
-    border-right: #ebebeb 1px solid;
-    font-size: .92857em;
-    text-transform: uppercase;
-}
-
-.cart-body {
-    width: 100%;
-    float: left;
-}
-
-.item-cart {
-    border: solid 1px #ebebeb;
-    width: 100%;
-    float: left;
-    border-bottom: 1px solid #ebebeb;
-}
-
-.item-cart>div {
-    float: left;
-    padding: 10px 5px;
-    line-height: 20px;
-    vertical-align: top;
-    border-right: 1px solid #ebebeb;
-    height: 170px;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-}
-
-.item-cart a {
-    text-decoration: none;
-    background: transparent;
-}
-
-.product-img {
-    min-height: 75px;
-    display: block;
-    height: auto;
-    width: 50%;
-}
-
-.product-img img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    display: inherit;
-    margin: 0 auto;
-    border: 0 none;
-    max-height: 100% !important;
-    vertical-align: middle;
-}
-
-.a-center {
-    text-align: center !important;
-}
-
-.product-name {
-    margin: 0;
-    float: left;
-    color: black;
-    overflow: hidden;
-    height: 44px;
-    line-height: 22px;
-    font-size: 1.3em;
-    font-weight: 500;
-    width: 100%;
-}
-
-h2 {
-    letter-spacing: 0.01em;
-}
-
-.product-name a {
-    color: #5b5b5b;
-}
-
-.price {
-    color: #3dc8f6;
-}
-
-.quantity {
-    border-right: none;
-    height: auto;
-    position: relative !important;
-}
-
-.quantity .count {
-    background: #ebebeb;
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-    vertical-align: baseline;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    border: none;
-    border-radius: 50%;
-}
-
-.quantity .number {
-    display: inline-block;
-    position: static;
-    height: 24px;
-    width: 30px;
-    text-align: center;
-    overflow: hidden;
-    border: none;
-}
-
-.cart-price {
-    font-weight: 600;
-    color: aqua;
-}
-
-.remove-item {
-    padding: 0;
-    cursor: pointer;
-}
-
-ul {
-    list-style: none outside;
-}
-
-.checkout {
-    color: #fff;
-    font-size: 1em;
-    padding-left: 30%;
-    margin-top: 40px;
-}
-
-.tinh-tong-tien {
-    margin-top: 40px;
-    margin-left: 40px;
-    /* border: 1px solid black; */
-    padding-left: 40%;
-}
-
-.tinh-tong-tien .total {
-    color: #3dc8f6;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.tinh-tong-tien .tong {
-    font-size: 23px;
-}
-
-
-/* @media only screen and (min-width: 768px) {
-    [class*="tinh-tong-tien"] {
+    * {
+        box-sizing: border-box;
+        font-family: 'Baloo Thambi 2', cursive;
+    }
+    
+    .title-main {
+        width: 100%;
+        height: 100px;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: auto;
+    }
+    
+    .title-main .icon-home {
+        font-size: 40px;
+    }
+    
+    .title-main .icon-home .fa-home {
+        color: #108896;
+    }
+    
+    .title-main .icon-home a {
+        text-decoration: none;
+    }
+    
+    .title-main .gio-hang {
+        font-size: 40px;
+        padding-left: 10px;
+        margin: 5px;
+        border-left: 3px solid #108896;
+        color: #108896;
+        font-weight: 600;
+    }
+    
+    .main-container-cart {
+        padding: 40px;
+        width: 100%;
+        float: left;
+        min-height: 300px;
+        background-color: #F5F3EE;
+    }
+    
+    .main-cart-page {
+        background: #fff;
+    }
+    
+    section,
+    div {
+        display: block;
+    }
+    
+    .cart-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .main-container .col-main {
+        float: none;
+        width: auto;
+    }
+    
+    .margin-bottom {
+        margin-bottom: 0 !important;
+    }
+    
+    .scroll {
+        margin-top: 20px;
+        overflow: hidden;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+    }
+    
+    .cart-thead {
+        background: #fbfbfb;
+        font-weight: bold;
+        font-size: 0.9em;
+        width: 100%;
+        border: 1px solid #ebebeb;
+        clear: both;
+        float: left;
+        min-width: 600px;
+    }
+    
+    .cart-thead>div {
+        float: left;
+        padding: 10px 0;
+        color: #333;
+        text-align: center;
+        border-left: #ebebeb 1px solid;
+        font-size: .92857em;
+        text-transform: uppercase;
+    }
+    
+    .cart-body {
+        width: 100%;
+        float: left;
+    }
+    
+    .item-cart {
+        border: solid 1px #ebebeb;
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    .item-cart>div {
+        float: left;
+        padding: 10px 5px;
+        line-height: 20px;
+        vertical-align: top;
+        border-left: 1px solid #ebebeb;
+        height: 170px;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .item-cart a {
+        text-decoration: none;
+        background: transparent;
+    }
+    
+    .product-img {
+        min-height: 75px;
+        display: block;
+        height: auto;
+        width: 50%;
+    }
+    
+    .product-img img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        display: inherit;
+        margin: 0 auto;
+        border: 0 none;
+        max-height: 100% !important;
+        vertical-align: middle;
+    }
+    
+    .a-center {
+        text-align: center !important;
+    }
+    
+    .product-name {
+        margin: 0;
+        float: left;
+        color: black;
+        overflow: hidden;
+        height: 44px;
+        line-height: 22px;
+        font-size: 1.5em;
+        font-weight: 500;
         width: 100%;
     }
-} */
-
-.checkout button {
-    background: #3dc8f6;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 50px;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 35px;
-    outline: none;
-    font-size: 1.14286em;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 15px;
-    margin-right: 40px;
-}
-
-
-/* .thanh-toan {
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 50px;
-    display: inline-block;
-    background: #3dc8f6;
-    height: 50px;
-    padding: 0 35px;
-    margin-right: 15px;
-    text-transform: uppercase;
-    border: none;
-    margin-bottom: 10px;
-}*/
-
-.checkout .thanh-toan:hover {
-    background-color: palevioletred;
-}
-
-.checkout .thanh-toan:active {
-    background-color: gray;
-}
-
-
-/* .tiep-tuc-mua {
-    color: #fff;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 50px;
-    display: inline-block;
-    background: #3dc8f6;
-    height: 50px;
-    padding: 0 35px;
-    margin-right: 15px;
-    text-transform: uppercase;
-    border: none;
-    margin-bottom: 10px;
-} */
-
-.checkout .tiep-tuc-mua:hover {
-    background-color: palevioletred;
-}
-
-.checkout .tiep-tuc-mua:active {
-    background-color: gray;
-}
-
-
-/* @media only screen and (min-width: 768px) {
-    [class*="clearfix"]v {
-        width: 100%;
+    
+    h2 {
+        letter-spacing: 0.01em;
     }
-} */
+    
+    .product-name a {
+        color: #5b5b5b;
+    }
+    
+    .price {
+        color: #108896;
+        font-size: 1.3em;
+    }
+    
+    .quantity {
+        border-right: none;
+        height: auto;
+        position: relative !important;
+    }
+    
+    .quantity .count {
+        background: #ebebeb;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        vertical-align: baseline;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .quantity .count:hover {
+        background-color: #108896;
+    }
+    
+    .quantity .number {
+        display: inline-block;
+        position: static;
+        height: 24px;
+        width: 30px;
+        text-align: center;
+        overflow: hidden;
+        border: none;
+    }
+    
+    .cart-price {
+        font-weight: 600;
+        color: #108896;
+    }
+    
+    .remove-item {
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .remove-item:hover {
+        color: #108896;
+    }
+    
+    ul {
+        list-style: none outside;
+    }
+    
+    .checkout {
+        color: #fff;
+        font-size: 1em;
+        margin-top: 40px;
+        clear: both;
+    }
+    
+    .tinh-tong-tien {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tinh-tong-tien .total {
+        color: #108896;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .tinh-tong-tien .tong {
+        font-size: 1.5em;
+    }
+    
+    .tinh-tong-tien span {
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+    
+    .submit {
+        clear: both;
+    }
+    
+    .checkout .tiep-tuc-mua,
+    .checkout .thanh-toan {
+        width: 50%;
+        float: left;
+        /* border: 1px solid black; */
+    }
+    
+    .checkout .tiep-tuc-mua button,
+    .checkout .thanh-toan button {
+        margin-left: 25%;
+        width: 50%;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        color: #fff;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        font-family: 'Baloo Thambi', sans-serif;
+        border: 0px;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        display: inline-block;
+        border-radius: 30px;
+    }
+    
+    .checkout .thanh-toan button {
+        background-color: #108896;
+    }
+    
+    .checkout .tiep-tuc-mua button {
+        background-color: #8d8a8a;
+    }
+    
+    .checkout .thanh-toan button:hover {
+        background-color: #EF5030;
+    }
+    
+    .checkout .thanh-toan button:active {
+        background-color: gray;
+    }
+    
+    .checkout .tiep-tuc-mua button:hover {
+        background-color: #108896;
+    }
+    
+    .checkout .tiep-tuc-mua button:active {
+        background-color: gray;
+    }
+    
+    @media(min-width:769px) {
+        .hidden-mobile {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .hidden-desktop {
+            display: none;
+        }
+        .main-cart-page {
+            width: 100%;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .item-product {
+            padding: 15px 15px;
+            min-height: 100px;
+            border-bottom: solid 1px #ebebeb;
+            overflow: hidden;
+        }
+        .item-product-cart-mobile {
+            float: left;
+            margin-right: 10px;
+            width: 80px;
+            max-height: 80px;
+        }
+        .item-product-cart-mobile a {
+            display: block;
+        }
+        .item-product-cart-mobile img {
+            max-height: 80px !important;
+            max-width: 80px;
+            vertical-align: middle;
+        }
+        .title-product-cart-mobile {
+            width: calc(100% - 170px);
+            margin-right: 10px;
+            float: left;
+        }
+        .title-product-cart-mobile h3 {
+            width: 100%;
+            float: left;
+            margin: 0 0 10px;
+            font-size: .9em;
+            font-weight: 400;
+        }
+        .title-product-cart-mobile a {
+            width: 100%;
+            float: left;
+            word-break: break-word;
+            text-decoration: none;
+        }
+        .title-product-cart-mobile p {
+            width: 100%;
+            float: left;
+            margin: 0;
+            font-size: .92857em;
+        }
+        .title-product-cart-mobile span {
+            color: #108896;
+        }
+        .select-item-qty-mobile {
+            width: 70px;
+            float: left;
+            text-align: center;
+        }
+        .select-item-qty-mobile>div {
+            position: relative;
+            width: 70px;
+            height: 25px;
+        }
+        .select-item-qty-mobile a {
+            line-height: 3;
+        }
+        .select-item-qty-mobile .count-sub {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .select-item-qty-mobile input {
+            position: absolute;
+        }
+        .select-item-qty-mobile .count-plus {
+            position: absolute;
+        }
+        .select-item-qty-mobile a {
+            line-height: 3;
+            text-decoration: none;
+            background: transparent;
+        }
+        .submit {
+            margin: 0;
+            width: 100%;
+        }
+        .checkout {
+            width: 100%;
+        }
+        .checkout .tiep-tuc-mua,
+        .checkout .thanh-toan {
+            width: 100%;
+        }
+        .checkout .tiep-tuc-mua button,
+        .checkout .thanh-toan button {
+            width: 100% !important;
+            margin-left: 0;
+            border-radius: 0px;
+        }
+        .title-main .icon-home,
+        .title-main .gio-hang {
+            font-size: 30px;
+        }
+    }

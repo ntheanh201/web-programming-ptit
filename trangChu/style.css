@@ -403,11 +403,23 @@ header .nav-main div.fas .fas.fa-search {
 }
 
 header .nav-main div.fas .form-search {
+<<<<<<< HEAD
     display: none !important;
     position: absolute;
     right: 19px;
     top: 45px;
     z-index: 20;
+=======
+  display: none !important;
+  position: absolute;
+  right: 19px;
+  top: 45px;
+  z-index: 20;
+  height: 1000px;
+  padding-top: 100px;
+  position: absolute;
+  top: -54px;
+>>>>>>> 576ce15eee552d50281a435ff85e95a25f889a82
 }
 
 header .nav-main div.fas .form-search input[type=text] {

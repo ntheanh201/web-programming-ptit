@@ -72,3 +72,14 @@ Array.from(moreImages).forEach((el) => {
 		modalContent.parentNode.replaceChild(temp, modalContent)
 	}
 })
+
+function quanityPlus(){
+  var rs = document.getElementById("main-quanity");
+  rs.value ++;
+}
+function quanityMinus(){
+  var rs = document.getElementById("main-quanity");
+  if(rs.value >=2){
+    rs.value --;
+  }
+}

@@ -1,0 +1,130 @@
+header .title-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+header .title-header-main .hotline {
+    font-size: 22px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+}
+
+header .title-header-main .hotline i {
+    margin-right: 10px;
+}
+
+header .title-header-main .img-main {
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .title-header-main .img-main img {
+    width: 37%;
+    cursor: pointer;
+}
+
+header .title-header-main .giohang {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .title-header-main .giohang i {
+    margin: 10px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f54b24;
+    cursor: pointer;
+}
+
+.cart-number {
+    position: relative;
+    background-color: white;
+    color: #f54b24;
+    border-radius: 10px;
+    line-height: 0.8em;
+    border: 2px solid #F54b24;
+    padding: 2px 6px;
+    top: -10px;
+    right: 20px
+}
+
+header .title-header-main .giohang img {
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 50px;
+    background-image: url("../public/img/bg-footer.jpg");
+    background-size: cover;
+}
+
+footer p.scroll-top i {
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
+    padding: 11px;
+    background: #f54b24;
+    border-radius: 50%;
+    z-index: 50;
+}
+
+footer .footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-top .footer-cates {
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-top .footer-cates .title-cates {
+    display: flex;
+}
+
+footer .footer-top .footer-cates .title-cates li {
+    list-style: none;
+    color: #fff;
+    margin: 10px;
+}
+
+footer .footer-top .footer-cates .title-cates li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-top .footer-cates .title-cates li:hover a {
+    color: #f54b24;
+}
+
+footer .footer-middle {
+    text-align: center;
+    min-height: 300px;
+    line-height: 3;
+    color: #fff;
+}
+
+footer .copyright {
+    color: #fff;
+    border-top: 1px solid;
+    text-align: center;
+    line-height: 3;
+}
