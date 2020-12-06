@@ -2,468 +2,470 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <Link rel="shortcut icon" type="image/x-icon" href="../public/img/love.png">
-  <link rel="stylesheet" href="../trangChu/style.css" />
-  <link rel="stylesheet" href="./styleProduct.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="shortcut icon" type="image/x-icon" href="../public/img/love.png">
+    <link rel="stylesheet" href="../trangChu/style.css" />
+    <link rel="stylesheet" href="./styleProduct.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
-  <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
-  <link href="../fontawesome-free-5.14.0-web/css/solid.min.css" rel="stylesheet">
-  <title>Pet Products Web</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
+    <link href="../fontawesome-free-5.14.0-web/css/solid.min.css" rel="stylesheet">
+    <title>Pet Products Web</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- header -->
-  <header>
-    <div class="title-header-main" >
-      <div class="hotline">
-        <i class="fas fa-phone-square" style="color: red"></i>
-        <p>HotLine : 0965 <span style="color: blue;"> xxx xxx</span></p>
-      </div>
-      <div class="img-main" style="text-align: center;">
-        <a href="../trangChu/index.html" style="width: 100%">
-          <img src="../public/img/logo_MeowWool_2_1_.png" alt="logo" />
-        </a>
-      </div>
-      <div class="giohang">
-        <i class="fas fa-user"></i>
-        <i class="fas fa-shopping-cart"></i>
-        <i class="fas fa-bars" onclick="clickMenuIcon()"></i>
-        <img src="../public/img/user.png" alt="register" style="width: 23px; cursor: pointer;" />
-      </div>
-    </div>
-    <div class="nav-main" id="header">
-      <div class="fas">
-        <i class="fas fa-search">
+    <!-- header -->
+    <header>
+        <div class="title-header-main">
+            <div class="hotline">
+                <i class="fas fa-phone-square" style="color: red"></i>
+                <p>HotLine : 0965 <span style="color: blue;"> xxx xxx</span></p>
+            </div>
+            <div class="img-main" style="text-align: center;">
+                <a href="../trangChu/index.html" style="width: 100%">
+                    <img src="../public/img/logo_MeowWool_2_1_.png" alt="logo" />
+                </a>
+            </div>
+            <div class="giohang">
+                <i class="fas fa-user"></i>
+                <a href="../cart/cart.html">
+                    <i class="fas fa-shopping-cart"></i></a>
+                <span class="cart-number">0</span>
+                <i class="fas fa-bars" onclick="clickMenuIcon()"></i>
+                <img src="../public/img/user.png" alt="register" style="width: 23px; cursor: pointer;" />
+            </div>
+        </div>
+        <div class="nav-main" id="header">
+            <div class="fas">
+                <i class="fas fa-search">
         </i>
-        <form method="GET" class="form-search">
-          <input type="text" placeholder="tìm kiếm ..." />
-        </form>
-      </div>
-      <ul class="title-nav-main">
-        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho chó <img src="../public/img/new-item.png" alt="hot-dog" /></a></li>
-        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho mèo <img src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
-        <li class="title"><a href="../pageProductsByCate/productsByCate.html">Phụ kiện</a></li>
-        <li class="title blog-about1"><a href="../pageProductsByCate/productsByCate.html">Chăm sóc thú cưng <i class="fas fa-chevron-down"></i></a>
-          <ul class="submenu1">
-            <li><a href="#">Cate 1</a></li>
-            <li><a href="#">Cate 2</a></li>
-            <li><a href="#">Cate 3</a></li>
-            <li><a href="#">Cate 4</a></li>
-            <li><a href="#">Cate 5</a></li>
-          </ul>
-        </li>
-        <li class="title blog-about"><a href="../pageProductsByCate/productsByCate.html">About <i class="fas fa-chevron-down"></i></a>
-          <ul class="submenu">
-            <li><a href="#">Vdev</a></li>
-            <li><a href="#">Dung</a></li>
-            <li><a href="#">Uyên</a></li>
-            <li><a href="#">T.Anh</a></li>
-          </ul>
-        </li>
-        <li class="title"><a href="../pageProductsByCate/productsByCate.html">Nhiều thông tin hơn</a></li>
-        <li class="title"><a>Thương hiệu</a></li>
-        <li class="title" style="border: none;">Phụ kiện khác</li>
-      </ul>
-      <div class="menu-small" id="menu-small">
-        <ul>
-          <li class="title"><a> Đồ cho chó <img src="../public/img/new-item.png" alt="hot-dog" /></a></li>
-          <li class="title"><a> Đồ cho mèo <img src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
-          <li class="title"><a>Phụ kiện</a></li>
-          <li class="title blog1"><a>Chăm sóc thú cưng <i class="fas fa-chevron-down"></i></a>
-            <ul class="submenu1">
-              <li><a href="../pageProductsByCate/productsByCate.html">Cate 1</a></li>
-              <li><a href="../pageProductsByCate/productsByCate.html">Cate 2</a></li>
-              <li><a href="../pageProductsByCate/productsByCate.html">Cate 3</a></li>
-              <li><a href="../pageProductsByCate/productsByCate.html">Cate 4</a></li>
-              <li><a href="../pageProductsByCate/productsByCate.html">Cate 5</a></li>
+                <form method="GET" class="form-search">
+                    <input type="text" placeholder="tìm kiếm ..." />
+                </form>
+            </div>
+            <ul class="title-nav-main">
+                <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho chó <img src="../public/img/new-item.png" alt="hot-dog" /></a></li>
+                <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho mèo <img src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
+                <li class="title"><a href="../pageProductsByCate/productsByCate.html">Phụ kiện</a></li>
+                <li class="title blog-about1"><a href="../pageProductsByCate/productsByCate.html">Chăm sóc thú cưng <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu1">
+                        <li><a href="#">Cate 1</a></li>
+                        <li><a href="#">Cate 2</a></li>
+                        <li><a href="#">Cate 3</a></li>
+                        <li><a href="#">Cate 4</a></li>
+                        <li><a href="#">Cate 5</a></li>
+                    </ul>
+                </li>
+                <li class="title blog-about"><a href="../pageProductsByCate/productsByCate.html">About <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Vdev</a></li>
+                        <li><a href="#">Dung</a></li>
+                        <li><a href="#">Uyên</a></li>
+                        <li><a href="#">T.Anh</a></li>
+                    </ul>
+                </li>
+                <li class="title"><a href="../pageProductsByCate/productsByCate.html">Nhiều thông tin hơn</a></li>
+                <li class="title"><a>Thương hiệu</a></li>
+                <li class="title" style="border: none;">Phụ kiện khác</li>
             </ul>
-          </li>
-          <li class="title blog"><a>About <i class="fas fa-chevron-down"></i></a>
-            <ul class="submenu">
-              <li><a href="../pageProductsByCate/productsByCate.html">V_Dev</a></li>
-              <li><a href="../pageProductsByCate/productsByCate.html">Dung</a></li>
-              <li><a href="../pageProductsByCate/productsByCate.html">Uyên</a></li>
-              <li><a href="../pageProductsByCate/productsByCate.html">Thế Anh</a></li>
-            </ul>
-          </li>
-          <li class="title"><a href="../pageProductsByCate/productsByCate.html">Nhiều thông tin hơn</a></li>
-          <li class="title"><a href="../pageProductsByCate/productsByCate.html">Thương hiệu</a></li>
-          <li class="title" style="border: none;"><a>Phụ kiện khác</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+            <div class="menu-small" id="menu-small">
+                <ul>
+                    <li class="title"><a> Đồ cho chó <img src="../public/img/new-item.png" alt="hot-dog" /></a></li>
+                    <li class="title"><a> Đồ cho mèo <img src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
+                    <li class="title"><a>Phụ kiện</a></li>
+                    <li class="title blog1"><a>Chăm sóc thú cưng <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu1">
+                            <li><a href="../pageProductsByCate/productsByCate.html">Cate 1</a></li>
+                            <li><a href="../pageProductsByCate/productsByCate.html">Cate 2</a></li>
+                            <li><a href="../pageProductsByCate/productsByCate.html">Cate 3</a></li>
+                            <li><a href="../pageProductsByCate/productsByCate.html">Cate 4</a></li>
+                            <li><a href="../pageProductsByCate/productsByCate.html">Cate 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="title blog"><a>About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="../pageProductsByCate/productsByCate.html">V_Dev</a></li>
+                            <li><a href="../pageProductsByCate/productsByCate.html">Dung</a></li>
+                            <li><a href="../pageProductsByCate/productsByCate.html">Uyên</a></li>
+                            <li><a href="../pageProductsByCate/productsByCate.html">Thế Anh</a></li>
+                        </ul>
+                    </li>
+                    <li class="title"><a href="../pageProductsByCate/productsByCate.html">Nhiều thông tin hơn</a></li>
+                    <li class="title"><a href="../pageProductsByCate/productsByCate.html">Thương hiệu</a></li>
+                    <li class="title" style="border: none;"><a>Phụ kiện khác</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-  <!-- main -->
-  <main>
-    <div class="title-main container">
-      <h5>
-        <i class="fas fa-home"></i>
-        <a href="../trangChu/index.html">
+    <!-- main -->
+    <main>
+        <div class="title-main container">
+            <h5>
+                <i class="fas fa-home"></i>
+                <a href="../trangChu/index.html">
           Trang chủ
-        </a>
-         > Sản phẩm theo loại</h5>
-    </div>
-    <div class="content-product-page container">
-      <div class="quang-cao">
-        <img src="../public/img/quangCao.jpg" alt="quang-cao" />
-        <img src="../public/img/quangCao2.jpg" alt="quang-cao" />
-        <img src="../public/img/quangCao3.jpg" alt="quang-cao" />
-        <img src="../public/img/quangCao.jpg" alt="quang-cao" />
-      </div>
-      <div class="area-products">
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham3.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
+        </a> > Sản phẩm theo loại</h5>
+        </div>
+        <div class="content-product-page container">
+            <div class="quang-cao">
+                <img src="../public/img/quangCao.jpg" alt="quang-cao" />
+                <img src="../public/img/quangCao2.jpg" alt="quang-cao" />
+                <img src="../public/img/quangCao3.jpg" alt="quang-cao" />
+                <img src="../public/img/quangCao.jpg" alt="quang-cao" />
             </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+            <div class="area-products">
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham3.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham2.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham2.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham3.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham3.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham2.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham2.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham2.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham2.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham2.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham2.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham3.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham3.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
-            </div>
-          </div>
-        </div>
-        <div class="form-product">
-          <a href="../detailProduct/Detail.html">
-            <div class="img">
-              <img src="../public/img/sanpham2.jpg" alt="sanpham" />
-              <div class="sale">
-                <i class="fas fa-star" style="color: #FFBA01;"></i>
-              </div>
-            </div>
-          </a>
-          <div class="content">
-            <a href="../detailProduct/Detail.html">
-              <div class="title">
-                <h3>Sữa tắm cho chó</h3>
-              </div>
-            </a>
-            <div class="price-content">
-              <div class="price-detail">
-                <h3 class="price">110.000 đ</h3>
-                <p>Lượt mua : 10000</p>
-              </div>
-              <button class="btn-buy">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-product">
+                    <a href="../detailProduct/Detail.html">
+                        <div class="img">
+                            <img src="../public/img/sanpham2.jpg" alt="sanpham" />
+                            <div class="sale">
+                                <i class="fas fa-star" style="color: #FFBA01;"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="content">
+                        <a href="../detailProduct/Detail.html">
+                            <div class="title">
+                                <h3>Sữa tắm cho chó</h3>
+                            </div>
+                        </a>
+                        <div class="price-content">
+                            <div class="price-detail">
+                                <h3 class="price">110.000 đ</h3>
+                                <p>Lượt mua : 10000</p>
+                            </div>
+                            <button class="btn-buy">
                 Add to Cart
               </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- footer -->
-  <footer>
-    <p class="scroll-top hidden" id="icon-top" onclick="goTop()">
-      <i class="fas fa-arrow-up"></i></p>
-    <div class="footer-top">
-      <div class="footer-cates">
-        <ul class="title-cates">
-          <li><a href="../pageProductsByCate/productsByCate.html">Về Meowwoof</a></li>
-          <li><a href="../pageProductsByCate/productsByCate.html">Liên hệ với chúng tôi</a></li>
-          <li><a href="../pageProductsByCate/productsByCate.html">Hướng dẫn khách hàng</a></li>
-          <li><a href="../pageProductsByCate/productsByCate.html">Điều khoản sử dụng</a></li>
-          <li><a href="../pageProductsByCate/productsByCate.html">Chính sách hoàn trả</a></li>
-          <li><a href="../pageProductsByCate/productsByCate.html">Chính sách ưu đãi</a></li> 
-        </ul>
-      </div>
-    </div>
-    <div class="footer-middle">
-      <div class="footer-content-middle">
-        <div class="footer-logo"><img src="https://meowwoof.vn/pub/media/wysiwyg/ntanh/logo_MeowWool.png"
-            alt="logo"></div>
-        <p><span style="color: #ffff00;"> PTIT </span> - Học viện Công nghê Bưu chính Viễn thông<br> E-mail:&nbsp;<span>&nbsp;
+    <!-- footer -->
+    <footer>
+        <p class="scroll-top hidden" id="icon-top" onclick="goTop()">
+            <i class="fas fa-arrow-up"></i></p>
+        <div class="footer-top">
+            <div class="footer-cates">
+                <ul class="title-cates">
+                    <li><a href="../pageProductsByCate/productsByCate.html">Về Meowwoof</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Liên hệ với chúng tôi</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Hướng dẫn khách hàng</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Điều khoản sử dụng</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Chính sách hoàn trả</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Chính sách ưu đãi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-content-middle">
+                <div class="footer-logo"><img src="https://meowwoof.vn/pub/media/wysiwyg/ntanh/logo_MeowWool.png" alt="logo"></div>
+                <p><span style="color: #ffff00;"> PTIT </span> - Học viện Công nghê Bưu chính Viễn thông<br> E-mail:&nbsp;<span>&nbsp;
             lap-trinh-Web-ThayDung</span></p>
-        <p>Hotline: <span style="color: #ff6600;"><a href="tel://0982190010"><span
-                style="color: #ff6600;">0965 xxx xxx</span></a></span></p>
-      </div>
-      <div class="socials-wrap">
-        <div class="title-follow">Follow Us</div>
-        <ul>
-          <li class="li-social facebook-social">
-            <a title="MeowWoof fanpage" href="#" target="_blank">
-              <span class="fa fa-facebook icon-social"></span><span class="name-social" style="color: red;">PTIT fanpage</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+                <p>Hotline: <span style="color: #ff6600;"><a href="tel://0982190010"><span
+                style="color: #ff6600;">0965 xxx xxx</span></a>
+                    </span>
+                </p>
+            </div>
+            <div class="socials-wrap">
+                <div class="title-follow">Follow Us</div>
+                <ul>
+                    <li class="li-social facebook-social">
+                        <a title="MeowWoof fanpage" href="#" target="_blank">
+                            <span class="fa fa-facebook icon-social"></span><span class="name-social" style="color: red;">PTIT fanpage</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="copyright">
-      <div class="footer-copyright-content">
-        <div class="copyright-footer">
-          <address>Sản phẩm, dịch vụ thú cưng, pet - Nhà phân phối tin cậy nhất <a title="meowwoof.vn" target="_blank"
+        <div class="copyright">
+            <div class="footer-copyright-content">
+                <div class="copyright-footer">
+                    <address>Sản phẩm, dịch vụ thú cưng, pet - Nhà phân phối tin cậy nhất <a title="meowwoof.vn" target="_blank"
               href="#">Ptit</a></address>
+                </div>
+                <div class="payment-footer">
+                    <p><img src="https://meowwoof.vn/pub/media/wysiwyg/payment/payment-footer3.png" alt="Payment"></p>
+                </div>
+            </div>
         </div>
-        <div class="payment-footer">
-          <p><img src="https://meowwoof.vn/pub/media/wysiwyg/payment/payment-footer3.png" alt="Payment"></p>
-        </div>
-      </div>
-    </div>
 
 
-  </footer>
+    </footer>
 
-  <script src="../script.js"></script>
+    <script src="../script.js"></script>
 
 </body>
 

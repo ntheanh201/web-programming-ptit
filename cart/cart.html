@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gio hang</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../trangChu/style.css" />
+    <link rel="stylesheet" href="./styleProduct.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/370103b70e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!---------------------------------------------------------------
+    ---------------------HEADER--------------------------------------
+    ----------------------------------------------------------------->
+    <header>
+        <div class="title-header-main">
+            <div class="hotline">
+                <i class="fas fa-phone-square" style="color: red"></i>
+                <p>HotLine : 0965 <span style="color: blue;"> xxx xxx</span></p>
+            </div>
+            <div class="img-main">
+                <img src="../public/img/logo_MeowWool_2_1_.png" alt="logo" />
+            </div>
+            <div class="giohang">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-bars" onclick="clickMenuIcon()"></i>
+                <img src="../public/img/user.png" alt="register" style="width: 23px; cursor: pointer;" />
+            </div>
+        </div>
+    </header>
+    <!---------------------------------------------------------------
+    ---------------------END HEADER----------------------------------
+    ----------------------------------------------------------------->
+
+
+
+    <!---------------------------------------------------------------
+    --------------------- TRANG CHU > GIO HANG-----------------------
+    ----------------------------------------------------------------->
+    <div class="title-main">
+        <span class="icon-home">
+                <a href="../trangChu/index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+            </span>
+        <span class="gio-hang">Giỏ hàng</span>
+    </div>
+    <!---------------------------------------------------------------
+    --------------------- END TRANG CHU > GIO HANG-------------------
+    ----------------------------------------------------------------->
+
+
+
+    <!---------------------------------------------------------------
+    ---------------------ITEM GIO HANG-------------------------------
+    ----------------------------------------------------------------->
+
+    <div class="cart-header">
+        <div class="cart-header-item">
+            <div class="san-pham">Sản phẩm</div>
+            <div class="ten-san-pham">Tên sản phẩm</div>
+            <div class="gia">Đơn giá</div>
+            <div class="so-luong">Số lượng</div>
+            <div class="tong-tien">Tổng tiền</div>
+            <div class="thao-tac">Thao tác</div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="item-cart">
+            <div class="check-box">
+                <input class="box" type="checkbox" name="" id="">
+            </div>
+            <div class="image">
+                <img src="/public/img/sanpham.jpg" alt="">
+            </div>
+            <div class="name-product"><a href="/detailProduct/Detail.html">Thuoc an cho cho</a></div>
+            <div class="price">
+                <span class="cost">5000000 đ</span>
+                <span class="cost-discount">4000000 đ</span>
+            </div>
+            <div class="quantity">
+                <button class="tru">-</button>
+                <input type="number" class="number" value="1">
+                <button class="cong">+</button>
+            </div>
+            <div class="total">4000000 đ</div>
+            <div class="action">
+                <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="item-cart">
+            <div class="check-box">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </div>
+            <div class="image">
+                <img src="/public/img/Phu-kien-thu-cung.jpg" alt="">
+            </div>
+            <div class="name-product"><a href="#">Thuoc an cho cho</a></div>
+            <div class="price">
+                <span class="cost">5000000 đ</span>
+                <span class="cost-discount">4000000 đ</span>
+            </div>
+            <div class="quantity">
+                <button class="tru">-</button>
+                <input type="number" class="number" value="1">
+                <button class="cong">+</button>
+            </div>
+            <div class="total">4000000 đ</div>
+            <div class="action">
+                <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="item-cart">
+            <div class="check-box">
+                <input type="checkbox" name="" id="">
+            </div>
+            <div class="image">
+                <img src="/public/img/Thuc_an_cho_meo.jpg" alt="">
+            </div>
+            <div class="name-product"><a href="#">Thuoc an cho meo</a></div>
+            <div class="price">
+                <span class="cost">5000000 đ</span>
+                <span class="cost-discount">4000000 đ</span>
+            </div>
+            <div class="quantity">
+                <button class="tru">-</button>
+                <input type="number" class="number" value="1">
+                <button class="cong">+</button>
+            </div>
+            <div class="total">4000000 đ</div>
+            <div class="action">
+                <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------
+    ---------------------END ITEM GIO HANG---------------------------
+    ----------------------------------------------------------------->
+
+
+    <!---------------------------------------------------------------
+    --------------------------DAT HANG-------------------------------
+    ----------------------------------------------------------------->
+    <div class="tinh-tong-tien">
+        <span class="tong">Tổng tiền:</span>
+        <span class="total">2000000 đ</span>
+    </div>
+    <ul class="checkout">
+        <a href="/pageProductsByCate/productsByCate.html"><button class="tiep-tuc-mua-hang">Tiếp tục mua hàng</button></a>
+        <button class="tien-hanh-dat-hang">Tiến hành đặt hàng</button>
+    </ul>
+    <!---------------------------------------------------------------
+    --------------------------END DAT HANG---------------------------
+    ----------------------------------------------------------------->
+
+
+    <!----------------------------------------------------------------
+    ---------------------------FOOTER---------------------------------
+    ------------------------------------------------------------------>
+    <footer>
+        <p class="scroll-top hidden" id="icon-top" onclick="goTop()">
+            <i class="fas fa-arrow-up"></i></p>
+        <div class="footer-top">
+            <div class="footer-cates">
+                <ul class="title-cates">
+                    <li><a href="../pageProductsByCate/productsByCate.html">Về Meowwoof</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Liên hệ với chúng tôi</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Hướng dẫn khách hàng</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Điều khoản sử dụng</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Chính sách hoàn trả</a></li>
+                    <li><a href="../pageProductsByCate/productsByCate.html">Chính sách ưu đãi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-content-middle">
+                <div class="footer-logo"><img src="https://meowwoof.vn/pub/media/wysiwyg/ntanh/logo_MeowWool.png" alt="logo"></div>
+                <p><span style="color: #ffff00;"> PTIT </span> - Học viện Công nghê Bưu chính Viễn thông<br> E-mail:&nbsp;<span>&nbsp;
+            lap-trinh-Web-ThayDung</span></p>
+                <p>Hotline: <span style="color: #ff6600;"><a href="tel://0982190010"><span
+                style="color: #ff6600;">0965 xxx xxx</span></a>
+                    </span>
+                </p>
+            </div>
+            <div class="socials-wrap">
+                <div class="title-follow">Follow Us</div>
+                <ul>
+                    <li class="li-social facebook-social">
+                        <a title="MeowWoof fanpage" href="#" target="_blank">
+                            <span class="fa fa-facebook icon-social"></span><span class="name-social" style="color: red;">PTIT fanpage</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="footer-copyright-content">
+                <div class="copyright-footer">
+                    <address>Sản phẩm, dịch vụ thú cưng, pet - Nhà phân phối tin cậy nhất <a title="meowwoof.vn" target="_blank"
+              href="#">Ptit</a></address>
+                </div>
+                <div class="payment-footer">
+                    <p><img src="https://meowwoof.vn/pub/media/wysiwyg/payment/payment-footer3.png" alt="Payment"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------------------------------
+    ---------------------------END FOOTER---------------------------------
+    ------------------------------------------------------------------>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
