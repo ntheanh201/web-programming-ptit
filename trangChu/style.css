@@ -436,7 +436,8 @@ header .nav-main .title-nav-main li.title {
 
 header .nav-main .title-nav-main li.title img {
   position: absolute;
-  top: -17px;
+  top: -6px;
+  right: -10px;
 }
 
 header .nav-main .title-nav-main li.title:hover {
