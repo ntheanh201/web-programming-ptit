@@ -1,0 +1,131 @@
+.container {
+    width: 1270px;
+    .user-detail {
+        position: relative;
+        padding: 0px;
+        width: 900px;
+        .user-top {
+            flex-basis: 100%;
+            padding: 0px 6px;
+            margin: 0px 0px 10px;
+            height: 41px;
+            border: none;
+            position: relative;
+
+            .item {
+                padding: 13px 0px;
+                font-size: 13px;
+                display: inline-block;
+                position: relative;
+            }
+            .item.active {
+                color: rgb(51, 51, 51);
+                padding-left: 45px;
+            }
+        }
+        .menu-user {
+            margin-right: 17px;
+            .account {
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                padding-left: 7px;
+                margin: 0px 0px 12px;
+                float: left;
+                img {
+                    width: 45px;
+                    margin: 0px 12px 0px 0px;
+                    border-radius: 50%;
+                }
+                .info {
+                    flex: 1 1 0%;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: rgb(51, 51, 51);
+                    font-weight: 300;
+                    .strong {
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-weight: 400;
+                        display: block;
+                        margin: 4px 0px 0px;
+                    }
+                }
+            }
+        }
+        .detail {
+            flex: 1 1 0%;
+            .title {
+                font-size: 19px;
+                line-height: 21px;
+                font-weight: 700;
+                margin: 20px 0px 15px;
+            }
+            .user-content {
+                background-color: rgb(255, 255, 255);
+                padding: 30px 20px;
+                border-radius: 4px;
+                margin-left: 30%;
+                .form-item {
+                    font-size: 15px;
+                    margin: 10px 20px 20px;
+                    .input-lable {
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        width: 15%;
+                        display: inline-block;
+                    }
+                    .input-item {
+                        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+                            -webkit-box-shadow 0.15s ease-in-out 0s;
+                        border: 1px solid rgb(132, 53, 52);
+                        border-radius: 4px;
+                        height: 34px;
+                        padding: 6px 12px;
+                        line-height: 34px;
+                        outline: none;
+                    }
+                }
+                .userbutton {
+                    color: rgb(74, 74, 74);
+                    background: rgb(253, 216, 53);
+                    display: inline-block;
+                    font-weight: 700;
+                    text-align: center;
+                    border: 0px;
+                    padding: 0px;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    margin-bottom: 0px;
+                    width: 30%;
+                    height: 41px;
+                    margin-left: 18%;
+                }
+            }
+        }
+    }
+}
+.user-top .item.active::before {
+    background: url(https://frontend.tikicdn.com/_desktop-next/static/img/icons/breadcrumb.svg);
+    width: 20px;
+    height: 41px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    color: rgb(204, 204, 204);
+}
+input {
+    appearance: button;
+    text-transform: none;
+    font-family: inherit;
+    margin: 0px;
+}
+.form-item input[type^="text"],
+.form-item input[type^="password"] {
+    width: 50%;
+}
+div {
+    display: block;
+}

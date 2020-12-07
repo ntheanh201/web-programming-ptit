@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Link rel="shortcut icon" type="image/x-icon" href="../public/img/love.png">
+      <link rel="stylesheet" href="..css">
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@
     </div>
 
     <!-- formRegister -->
-    <div class="formRegister" id="formRegister">
+    <!-- <div class="formRegister" id="formRegister">
         <div class="wapper" onclick="showFormRegister()"></div>
         <div class="main-form-login">
             <h3>Chào mừng bạn đến với Shop Pet</h3>
@@ -69,11 +70,11 @@
                     <button type="submit" class="btn btn-primary">Register</button>
             </form>
         </div>
-    </div>
+    </div> -->
   </div>
   <!-- header -->
   <header>
-    <div class="title-header-main" >
+    <div class="title-header-main">
       <div class="hotline">
         <i class="fas fa-phone-square" style="color: red"></i>
         <p>HotLine : 0965 <span style="color: blue;"> xxx xxx</span></p>
@@ -82,13 +83,17 @@
         <img src="../public/img/logo_MeowWool_2_1_.png" alt="logo" />
       </div>
       <div class="giohang">
-        <i class="fas fa-user" onclick="showFormLogin()"></i>
-        <i class="fas fa-registered" onclick="showFormRegister()"></i>
+        <a href="/login-signin/login.html">
+          <i class="fas fa-user"></i>
+        </a>
+        <a href="/login-signin/signin.html">
+          <i class="fas fa-registered"></i>
+        </a>
         <i class="fas fa-shopping-cart"></i>
         <i class="fas fa-bars" onclick="clickMenuIcon()"></i>
         <img src="../public/img/exit.png" alt="exit" style="width: 23px; cursor: pointer;" />
       </div>
-    </div> 
+    </div>
     <div class="nav-main" id="header">
       <div class="fas" style="position: absolute; right: 10px; top: 10px;width: 200px;">
         <i class="fas fa-search">
@@ -98,10 +103,13 @@
         </form>
       </div>
       <ul class="title-nav-main">
-        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho chó <img src="../public/img/new-item.png" alt="hot-dog" /></a></li>
-        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho mèo <img src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
+        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho chó <img
+              src="../public/img/new-item.png" alt="hot-dog" /></a></li>
+        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho mèo <img
+              src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
         <li class="title"><a href="../pageProductsByCate/productsByCate.html">Phụ kiện</a></li>
-        <li class="title blog-about1"><a href="../pageProductsByCate/productsByCate.html">Chăm sóc thú cưng <i class="fas fa-chevron-down"></i></a>
+        <li class="title blog-about1"><a href="../pageProductsByCate/productsByCate.html">Chăm sóc thú cưng <i
+              class="fas fa-chevron-down"></i></a>
           <ul class="submenu1">
             <li><a href="../pageProductsByCate/productsByCate.html">Cate 1</a></li>
             <li><a href="../pageProductsByCate/productsByCate.html">Cate 2</a></li>
@@ -180,6 +188,25 @@
             <img src="../public/img/banner.jpg" alt="banner" />
         </section>
 
+        <!-- slide -->
+        <!-- <section>
+          <div class="show">
+            <div class="slide_show">
+                <div class="dieuhuong">
+                    <i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+                    <i class="fa fa-chevron-circle-right" onclick="Next();"></i>
+                </div>
+                <div class="slides">
+                    <img src="./img/img2.jpg" alt="slide">
+                    <img src="./img/k3.jpg" alt="slide">
+                    <img src="./img/k2.jpg" alt="slide">
+                    <img src="./img/anh1.png" alt="slide">
+                    <img src="./img/anh2.png" alt="slide">
+                    <img src="./img/anh3.png" alt="slide">
+                </div>
+            </div>
+        </div>
+        </section> -->
         <!-- ? top Area show  -->
         <section class="area-show-now">
             <div class="step-area-show">
@@ -307,9 +334,31 @@
 
 
     </footer>
-
+    <!-- <script>
+      $(".button-login").click(function () {
+	    // var postcode = $(this).parents(".postcode-input")
+	    //     .children("input").val();
+	    // First do some basic validation of the postcode like
+	    // correct format etc.
+	    var username = $("#username").value();
+	    console.log("username : ", username)
+/* 	    if (!validatePostcode(postcode)) {
+	        alert("Invalid Postal Code, please try again");
+	        return false;
+	    }
+	    var finalUrl = BASE_URL += "?postcode=" + postcode; 
+	    $.ajax({
+	        url: finalUrl,
+	        cache: false,
+	        success: function (html) {
+	            // Parse the recieved data here.
+	            console.log(html);
+	        }
+	    }); */
+	});
+    </script> -->
     <script src="../script.js"></script>
-
+    <script type="text/javascript" src="./style.js"></script>
 </body>
 
 </html>

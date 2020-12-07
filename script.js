@@ -18,11 +18,11 @@ function showFormLogin(){
   } else {
     form.classList.remove("show");
   } 
-  var formRegis = document.getElementById("formRegister");
-  var arr2 = formRegis.className.split(" ");
-  if (arr2.indexOf("show") !== -1) {
-    formRegis.classList.remove("show");
-  } 
+  // var formRegis = document.getElementById("formRegister");
+  // var arr2 = formRegis.className.split(" ");
+  // if (arr2.indexOf("show") !== -1) {
+  //   formRegis.classList.remove("show");
+  // } 
 }
 
 function showFormRegister(){
