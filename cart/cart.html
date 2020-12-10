@@ -5,39 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gio hang</title>
+    <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../trangChu/style.css" />
-    <link rel="stylesheet" href="./styleProduct.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/370103b70e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!---------------------------------------------------------------
-    ---------------------HEADER--------------------------------------
-    ----------------------------------------------------------------->
-    <header>
-        <div class="title-header-main">
-            <div class="hotline">
-                <i class="fas fa-phone-square" style="color: red"></i>
-                <p>HotLine : 0965 <span style="color: blue;"> xxx xxx</span></p>
-            </div>
-            <div class="img-main">
-                <img src="../public/img/logo_MeowWool_2_1_.png" alt="logo" />
-            </div>
-            <div class="giohang">
-                <i class="fas fa-user"></i>
-                <i class="fas fa-bars" onclick="clickMenuIcon()"></i>
-                <img src="../public/img/user.png" alt="register" style="width: 23px; cursor: pointer;" />
-            </div>
-        </div>
-    </header>
-    <!---------------------------------------------------------------
-    ---------------------END HEADER----------------------------------
-    ----------------------------------------------------------------->
-
 
 
     <!---------------------------------------------------------------
@@ -56,171 +30,255 @@
     ----------------------------------------------------------------->
 
 
+    <section class="main-cart-page main-container-cart">
+        <div class="main cart-container hidden-desktop">
+            <div class="col-main cart-desktop-page cart-page">
+                <div class="cart page-cart hidden">
+                    <form action="">
+                        <div class="scroll">
+                            <div class="cart-thead">
+                                <div style="width: 17%;" class="a-center">Sản phẩm</div>
+                                <div style="width: 28%;" class="a-center">Tên sản phẩm</div>
+                                <div style="width: 16%;" class="a-center">
+                                    <span class="nobr">Đơn giá</span>
+                                </div>
+                                <div style="width: 14%;" class="a-center">Số lượng</div>
+                                <div style="width: 20%;" class="a-center">Thành tiền</div>
+                                <div style="width: 5%;" class="a-center xoa">Xóa</div>
+                            </div>
+                            <!-- Body cart -->
+                            <div class="cart-body">
+                                <!-- Item 1 -->
+                                <div class="item-cart">
+                                    <div style="width:17%" class="image">
+                                        <a class="product-img" href="#">
+                                            <img src="../public/img/sanpham.jpg" alt="Anh san pham">
+                                        </a>
+                                    </div>
+                                    <div style="width:28%;" class="a-center">
+                                        <h2 class="product-name">
+                                            <a href="#">Thức ăn cho chó</a>
+                                        </h2>
+                                    </div>
+                                    <div style="width: 16%;" class="a-center">
+                                        <span class="cart-price">
+                                            <span class="price">500.000đ</span>
+                                        </span>
+                                    </div>
+                                    <div style="width: 14%;" class="a-center">
+                                        <div class="quantity">
+                                            <button onclick="var result = document.getElementById('quantity-item-input1');
+                                            var resultvalue = result.value;
+                                            if (!isNaN(resultvalue) && resultvalue>1) result.value--;
+                                            return false;" class="count" type="button">–</button>
+                                            <input type="text" class="number" id="quantity-item-input1" value="1">
+                                            <button onclick="var result = document.getElementById('quantity-item-input1');
+                                            var resultvalue = result.value;
+                                            if (!isNaN(resultvalue)) result.value++;
+                                            return false;" class="count" type="button">+</button>
+                                        </div>
+                                    </div>
+                                    <div style="width: 20%;" class="a-center">
+                                        <span class="cart-price">
+                                            <span class="price">500.000đ</span>
+                                        </span>
+                                    </div>
+                                    <div style="width: 5%;" class="a-center">
+                                        <span class="remove-item">
+                                        <i class="fas fa-trash-alt"></i>
+                                       </span>
+                                    </div>
+                                </div>
 
-    <!---------------------------------------------------------------
-    ---------------------ITEM GIO HANG-------------------------------
-    ----------------------------------------------------------------->
+                                <!-- Item 2 -->
+                                <div class="item-cart">
+                                    <div style="width:17%" class="image">
+                                        <a class="product-img" href="#">
+                                            <img src="../public/img/sanpham.jpg" alt="Anh san pham">
+                                        </a>
+                                    </div>
+                                    <div style="width:28%;" class="a-center">
+                                        <h2 class="product-name">
+                                            <a href="#">Thức ăn cho chó</a>
+                                        </h2>
+                                    </div>
+                                    <div style="width: 16%;" class="a-center">
+                                        <span class="cart-price">
+                                            <span class="price">500.000đ</span>
+                                        </span>
+                                    </div>
+                                    <div style="width: 14%;" class="a-center">
+                                        <div class="quantity">
+                                            <button onclick="var result = document.getElementById('quantity-item-input2');
+                                            var resultvalue = result.value;
+                                            if (!isNaN(resultvalue) && resultvalue>1) result.value--;
+                                            return false;" class="count" type="button">–</button>
+                                            <input type="text" class="number" id="quantity-item-input2" value="1">
+                                            <button onclick="var result = document.getElementById('quantity-item-input2');
+                                            var resultvalue = result.value;
+                                            if (!isNaN(resultvalue)) result.value++;
+                                            return false;" class="count" type="button">+</button>
+                                        </div>
+                                    </div>
+                                    <div style="width: 20%;" class="a-center">
+                                        <span class="cart-price">
+                                            <span class="price">500.000đ</span>
+                                        </span>
+                                    </div>
+                                    <div style="width: 5%;" class="a-center">
+                                        <span class="remove-item">
+                                        <i class="fas fa-trash-alt"></i>
+                                       </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="list-item-mobile hidden-mobile">
+            <div class="main-cart-mobile ">
+                <form action="">
+                    <div class="header-cart" style="background:#fff;">
+                        <h3>Giỏ hàng của bạn</h3>
+                    </div>
+                    <div class="header-cart-content" style="background:#fff;">
+                        <div class="cart_page_mobile content-product-list">
+                            <div class="item-product -item-product-123">
+                                <div class="item-product-cart-mobile">
+                                    <a href="../detailProduct/Detail.html" class="product-images1" title="">
+                                        <img alt="" src="../public/img/sanpham.jpg"></a>
+                                </div>
+                                <div class="title-product-cart-mobile">
+                                    <h3><a href="../detailProduct/Detail.html" title="">Thức ăn cho chó</a></h3>
+                                    <p>Giá: <span>500.000₫</span></p>
+                                </div>
+                                <div class="select-item-qty-mobile">
+                                    <div class="quantity">
+                                        <button onclick="var result = document.getElementById('quantity-item-input1234');
+                                var resultvalue = result.value;
+                                if (!isNaN(resultvalue) && resultvalue>1) result.value--;
+                                return false;" class="count count-sub" type="button">–</button>
+                                        <input type="text" class="number" id="quantity-item-input1234" value="1">
+                                        <button onclick="var result = document.getElementById('quantity-item-input1234');
+                                var resultvalue = result.value;
+                                if (!isNaN(resultvalue)) result.value++;
+                                return false;" class="count count-plus" type="button">+</button>
+                                    </div>
+                                    <a class="button remove-item remove-item-cart" href="javascript:;" data-id="36118033">Xoá</a></div>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="cart-header">
-        <div class="cart-header-item">
-            <div class="san-pham">Sản phẩm</div>
-            <div class="ten-san-pham">Tên sản phẩm</div>
-            <div class="gia">Đơn giá</div>
-            <div class="so-luong">Số lượng</div>
-            <div class="tong-tien">Tổng tiền</div>
-            <div class="thao-tac">Thao tác</div>
+                    <div class="header-cart-content" style="background:#fff;">
+                        <div class="cart_page_mobile content-product-list">
+                            <div class="item-product -item-product-123">
+                                <div class="item-product-cart-mobile">
+                                    <a href="../detailProduct/Detail.html" class="product-images1" title="">
+                                        <img alt="" src="../public/img/sanpham.jpg"></a>
+                                </div>
+                                <div class="title-product-cart-mobile">
+                                    <h3><a href="../detailProduct/Detail.html" title="">Thức ăn cho chó</a></h3>
+                                    <p>Giá: <span>500.000₫</span></p>
+                                </div>
+                                <div class="select-item-qty-mobile">
+                                    <div class="quantity">
+                                        <button onclick="var result = document.getElementById('quantity-item-input123467');
+                                var resultvalue = result.value;
+                                if (!isNaN(resultvalue) && resultvalue>1) result.value--;
+                                return false;" class="count count-sub" type="button">–</button>
+                                        <input type="text" class="number" id="quantity-item-input123467" value="1">
+                                        <button onclick="var result = document.getElementById('quantity-item-input123467');
+                                var resultvalue = result.value;
+                                if (!isNaN(resultvalue)) result.value++;
+                                return false;" class="count count-plus" type="button">+</button>
+                                    </div>
+                                    <a class="button remove-item remove-item-cart" href="javascript:;" data-id="36118033">Xoá</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
         </div>
-    </div>
-    <div class="cart">
-        <div class="item-cart">
-            <div class="check-box">
-                <input class="box" type="checkbox" name="" id="">
+        <div class="submit">
+            <div class="tinh-tong-tien">
+                <span class="tong">Tổng tiền:</span>
+                <span class="total">2000000 đ</span>
             </div>
-            <div class="image">
-                <img src="/public/img/sanpham.jpg" alt="">
-            </div>
-            <div class="name-product"><a href="/detailProduct/Detail.html">Thuoc an cho cho</a></div>
-            <div class="price">
-                <span class="cost">5000000 đ</span>
-                <span class="cost-discount">4000000 đ</span>
-            </div>
-            <div class="quantity">
-                <button class="tru">-</button>
-                <input type="number" class="number" value="1">
-                <button class="cong">+</button>
-            </div>
-            <div class="total">4000000 đ</div>
-            <div class="action">
-                <i class="fas fa-trash-alt"></i>
-            </div>
-        </div>
-    </div>
-    <div class="cart">
-        <div class="item-cart">
-            <div class="check-box">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </div>
-            <div class="image">
-                <img src="/public/img/Phu-kien-thu-cung.jpg" alt="">
-            </div>
-            <div class="name-product"><a href="#">Thuoc an cho cho</a></div>
-            <div class="price">
-                <span class="cost">5000000 đ</span>
-                <span class="cost-discount">4000000 đ</span>
-            </div>
-            <div class="quantity">
-                <button class="tru">-</button>
-                <input type="number" class="number" value="1">
-                <button class="cong">+</button>
-            </div>
-            <div class="total">4000000 đ</div>
-            <div class="action">
-                <i class="fas fa-trash-alt"></i>
+            <div class="checkout">
+                <div class="clearfix">
+                    <div class="tiep-tuc-mua">
+                        <a href="/pageProductsByCate/productsByCate.html"><button class="tiep-tuc-mua">Tiếp tục mua hàng</button></a>
+                    </div>
+                    <div class="thanh-toan">
+                        <a href="../order/order.html"><button class=" thanh-toan ">Tiến hành đặt hàng</button></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="cart">
-        <div class="item-cart">
-            <div class="check-box">
-                <input type="checkbox" name="" id="">
-            </div>
-            <div class="image">
-                <img src="/public/img/Thuc_an_cho_meo.jpg" alt="">
-            </div>
-            <div class="name-product"><a href="#">Thuoc an cho meo</a></div>
-            <div class="price">
-                <span class="cost">5000000 đ</span>
-                <span class="cost-discount">4000000 đ</span>
-            </div>
-            <div class="quantity">
-                <button class="tru">-</button>
-                <input type="number" class="number" value="1">
-                <button class="cong">+</button>
-            </div>
-            <div class="total">4000000 đ</div>
-            <div class="action">
-                <i class="fas fa-trash-alt"></i>
-            </div>
-        </div>
-    </div>
+    </section>
+
     <!---------------------------------------------------------------
     ---------------------END ITEM GIO HANG---------------------------
     ----------------------------------------------------------------->
 
 
-    <!---------------------------------------------------------------
-    --------------------------DAT HANG-------------------------------
-    ----------------------------------------------------------------->
-    <div class="tinh-tong-tien">
-        <span class="tong">Tổng tiền:</span>
-        <span class="total">2000000 đ</span>
-    </div>
-    <ul class="checkout">
-        <a href="/pageProductsByCate/productsByCate.html"><button class="tiep-tuc-mua-hang">Tiếp tục mua hàng</button></a>
-        <button class="tien-hanh-dat-hang">Tiến hành đặt hàng</button>
-    </ul>
-    <!---------------------------------------------------------------
-    --------------------------END DAT HANG---------------------------
-    ----------------------------------------------------------------->
-
-
-    <!----------------------------------------------------------------
-    ---------------------------FOOTER---------------------------------
-    ------------------------------------------------------------------>
-    <footer>
-        <p class="scroll-top hidden" id="icon-top" onclick="goTop()">
-            <i class="fas fa-arrow-up"></i></p>
-        <div class="footer-top">
-            <div class="footer-cates">
-                <ul class="title-cates">
-                    <li><a href="../pageProductsByCate/productsByCate.html">Về Meowwoof</a></li>
-                    <li><a href="../pageProductsByCate/productsByCate.html">Liên hệ với chúng tôi</a></li>
-                    <li><a href="../pageProductsByCate/productsByCate.html">Hướng dẫn khách hàng</a></li>
-                    <li><a href="../pageProductsByCate/productsByCate.html">Điều khoản sử dụng</a></li>
-                    <li><a href="../pageProductsByCate/productsByCate.html">Chính sách hoàn trả</a></li>
-                    <li><a href="../pageProductsByCate/productsByCate.html">Chính sách ưu đãi</a></li>
-                </ul>
+    <footer class="footer">
+        <div class="l-footer">
+            <h1>
+                <i class="fas fa-paw"></i>
+                <span class="name-web">Woof!</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+            <div class="social-media">
+                <a href="#" title=""><i class="fa fa-twitter"></i></a>
+                <a href="#" title=""><i class="fa fa-facebook"></i></a>
+                <a href="#" title=""><i class="fa fa-google-plus"></i></a>
+                <a href="#" title=""><i class="fa fa-instagram"></i></a>
             </div>
         </div>
-        <div class="footer-middle">
-            <div class="footer-content-middle">
-                <div class="footer-logo"><img src="https://meowwoof.vn/pub/media/wysiwyg/ntanh/logo_MeowWool.png" alt="logo"></div>
-                <p><span style="color: #ffff00;"> PTIT </span> - Học viện Công nghê Bưu chính Viễn thông<br> E-mail:&nbsp;<span>&nbsp;
-            lap-trinh-Web-ThayDung</span></p>
-                <p>Hotline: <span style="color: #ff6600;"><a href="tel://0982190010"><span
-                style="color: #ff6600;">0965 xxx xxx</span></a>
-                    </span>
-                </p>
-            </div>
-            <div class="socials-wrap">
-                <div class="title-follow">Follow Us</div>
-                <ul>
-                    <li class="li-social facebook-social">
-                        <a title="MeowWoof fanpage" href="#" target="_blank">
-                            <span class="fa fa-facebook icon-social"></span><span class="name-social" style="color: red;">PTIT fanpage</span>
-                        </a>
-                    </li>
+        <ul class="r-footer">
+            <li>
+                <h2 class="title-footer">
+                    Social</h2>
+                <ul class="box">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Dribbble</a></li>
                 </ul>
-            </div>
-        </div>
+            </li>
+            <li class="features">
+                <h2 class="title-footer">
+                    Information</h2>
+                <ul class="box h-box">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Certifications</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                </ul>
+            </li>
 
-        <div class="copyright">
-            <div class="footer-copyright-content">
-                <div class="copyright-footer">
-                    <address>Sản phẩm, dịch vụ thú cưng, pet - Nhà phân phối tin cậy nhất <a title="meowwoof.vn" target="_blank"
-              href="#">Ptit</a></address>
-                </div>
-                <div class="payment-footer">
-                    <p><img src="https://meowwoof.vn/pub/media/wysiwyg/payment/payment-footer3.png" alt="Payment"></p>
-                </div>
-            </div>
+            <li>
+                <h2 class="title-footer">
+                    Legal</h2>
+                <ul class="box">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contract</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="b-footer">
+            <p>
+                All rights reserved by ©CompanyName 2020 </p>
         </div>
     </footer>
-    <!----------------------------------------------------------------
-    ---------------------------END FOOTER---------------------------------
-    ------------------------------------------------------------------>
-    <script src="../script.js"></script>
 
 </body>
 
