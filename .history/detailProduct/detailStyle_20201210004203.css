@@ -540,13 +540,12 @@ div.button {
 .preview_logo a {
     display: inline-block;
     position: relative;
-	margin: 0px;
-	padding-right: 50px;
+	margin: 5px 10px;
 	
 }
 
 .preview_logo .fas {
-    font-size: 40px;
+    font-size: 50px;
 	color: #EF5030;
 	
 }

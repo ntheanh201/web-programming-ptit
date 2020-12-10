@@ -1,48 +1,44 @@
-body{
-  margin: 0px;
-  padding: 0px;
-}
-.container-userdetail {
-  width: 100%;
-  font-family: "Baloo Thambi 2", cursive;
-}
-a{
-  text-decoration: none;
-}
-.container-userdetail .user-detail {
-  position: relative;
+.container {
   width: 100%;
 }
 
-.container-userdetail .user-detail .user-top {
+.container .user-detail {
+  position: relative;
+  padding: 0px;
   width: 100%;
+}
+
+.container .user-detail .user-top {
   font-weight: bold;
   background-color: rgb(103, 84, 68);
+  /* -ms-flex-preferred-size: 100%; */
   flex-basis: 100%;
-  /* height: 41px; */
+  padding: 0px 6px;
+  margin: 0px 0px 10px;
+  height: 41px;
   border: none;
-  position: relative ;
+  position: relative;
 }
 
-.container-userdetail .user-detail .user-top .item {
-  padding: 10px 20px 10px 40px;
-  font-size: 14px;
+.container .user-detail .user-top .item {
+  padding: 13px 0px;
+  font-size: 13px;
   display: inline-block;
   position: relative;
   color: white;
   
 }
 
-.container-userdetail .user-detail .user-top .item.active {
+.container .user-detail .user-top .item.active {
   /* color: #333333; */
   padding-left: 45px;
 }
 
-.container-userdetail .user-detail .menu-user {
+.container .user-detail .menu-user {
   margin-right: 17px;
 }
 
-.container-userdetail .user-detail .menu-user .account {
+.container .user-detail .menu-user .account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,23 +50,23 @@ a{
   float: left;
 }
 
-.container-userdetail .user-detail .menu-user .account img {
+.container .user-detail .menu-user .account img {
   width: 45px;
   margin: 0px 12px 0px 0px;
   border-radius: 50%;
 }
 
-.container-userdetail .user-detail .menu-user .account .info {
+.container .user-detail .menu-user .account .info {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0%;
   flex: 1 1 0%;
-  font-size: 15x;
+  font-size: 13px;
   line-height: 15px;
   color: #333333;
-  font-weight: 700;
+  font-weight: 300;
 }
 
-.container-userdetail .user-detail .menu-user .account .info .strong {
+.container .user-detail .menu-user .account .info .strong {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
@@ -78,41 +74,39 @@ a{
   margin: 4px 0px 0px;
 }
 
-.container-userdetail .user-detail .detail {
+.container .user-detail .detail {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0%;
   flex: 1 1 0%;
 }
 
-.container-userdetail .user-detail .detail .title {
-  font-size: 25px;
+.container .user-detail .detail .title {
+  font-size: 19px;
   line-height: 21px;
   font-weight: 700;
-  padding: 10px 0px 10px 50%;
-  /* margin: 20px 0px 15px; */
+  margin: 20px 0px 15px;
 }
 
-.container-userdetail .user-detail .detail .user-content {
+.container .user-detail .detail .user-content {
   background-color: white;
   padding: 30px 20px;
   border-radius: 4px;
-  text-align: center;
-  position: relative;
+  margin-left: 30%;
 }
 
-.container-userdetail .user-detail .detail .user-content .form-item {
+.container .user-detail .detail .user-content .form-item {
   font-size: 15px;
   margin: 10px 20px 20px;
 }
 
-.container-userdetail .user-detail .detail .user-content .form-item .input-lable {
+.container .user-detail .detail .user-content .form-item .input-lable {
   color: #333333;
   font-weight: 400;
   width: 15%;
   display: inline-block;
 }
 
-.container-userdetail .user-detail .detail .user-content .form-item .input-item {
+.container .user-detail .detail .user-content .form-item .input-item {
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
   border: 1px solid #843534;
   border-radius: 4px;
@@ -122,7 +116,7 @@ a{
   outline: none;
 }
 
-.container-userdetail .user-detail .detail .user-content .userbutton {
+.container .user-detail .detail .user-content .userbutton {
   color: #4a4a4a;
   background: #fdd835;
   display: inline-block;
@@ -133,9 +127,9 @@ a{
   font-size: 14px;
   border-radius: 4px;
   margin-bottom: 0px;
-  width: 50%;
+  width: 30%;
   height: 41px;
-  margin-left: 14%;
+  margin-left: 18%;
 }
 
 .user-top .item.active::before {

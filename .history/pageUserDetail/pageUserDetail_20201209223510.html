@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pageUserDetail/userDetail.css">
+    <!-- <link rel="stylesheet" href="/login-signin/stylelog-sign.css"> -->
+    <link rel="stylesheet" href="/trangChu/style.css">
+    <!-- <link rel="stylesheet" href="/styles/main.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
+    <link href="../fontawesome-free-5.14.0-web/css/solid.min.css" rel="stylesheet">
+    <title>User Detail</title>
+</head>
+
+<body>
+   <header>
+    <div class="title-header-main">
+      <div class="hotline">
+        <i class="fas fa-phone-square" style="color: red"></i>
+        <p>HotLine : 0965 <span style="color: blue;"> xxx xxx</span></p>
+      </div>
+      <div class="img-main">
+        <img src="../public/img/logo_MeowWool_2_1_.png" alt="logo" />
+      </div>
+      <div class="giohang">
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-user-circle"></i>
+        <i class="fas fa-bars" onclick="clickMenuIcon()"></i>
+        <img src="../public/img/exit.png" alt="exit" style="width: 23px; cursor: pointer;" />
+      </div>
+    </div>
+    <div class="nav-main" id="header">
+      <div class="fas">
+        <i class="fas fa-search">
+        </i>
+        <form method="GET" class="form-search">
+          <input type="text" placeholder="tìm kiếm ..." />
+        </form>
+      </div>
+      <ul class="title-nav-main">
+        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho chó <img
+              src="../public/img/new-item.png" alt="hot-dog" /></a></li>
+        <li class="title"><a href="../pageProductsByCate/productsByCate.html"> Đồ cho mèo <img
+              src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
+        <li class="title"><a href="../pageProductsByCate/productsByCate.html">Phụ kiện</a></li>
+        <li class="title blog-about1"><a href="../pageProductsByCate/productsByCate.html">Chăm sóc thú cưng <i
+              class="fas fa-chevron-down"></i></a>
+          <ul class="submenu1">
+            <li><a href="../pageProductsByCate/productsByCate.html">Cate 1</a></li>
+            <li><a href="../pageProductsByCate/productsByCate.html">Cate 2</a></li>
+            <li><a href="../pageProductsByCate/productsByCate.html">Cate 3</a></li>
+            <li><a href="../pageProductsByCate/productsByCate.html">Cate 4</a></li>
+            <li><a href="../pageProductsByCate/productsByCate.html">Cate 5</a></li>
+          </ul>
+        </li>
+        <li class="title blog-about"><a>About <i class="fas fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="../pageProductsByCate/productsByCate.html">Vdev</a></li>
+            <li><a href="../pageProductsByCate/productsByCate.html">Dung</a></li>
+            <li><a href="../pageProductsByCate/productsByCate.html">Uyên</a></li>
+            <li><a href="../pageProductsByCate/productsByCate.html">T.Anh</a></li>
+          </ul>
+        </li>
+        <li class="title"><a href="../pageProductsByCate/productsByCate.html">Nhiều thông tin hơn</a></li>
+        <li class="title"><a href="../pageProductsByCate/productsByCate.html">Thương hiệu</a></li>
+        <li class="title" style="border: none;">Phụ kiện khác</li>
+      </ul>
+      <div class="menu-small" id="menu-small">
+        <ul>
+          <li class="title"><a> Đồ cho chó <img src="../public/img/new-item.png" alt="hot-dog" /></a></li>
+          <li class="title"><a> Đồ cho mèo <img src="../public/img/hot-item.png" alt="hot-cat" /> </a></li>
+          <li class="title"><a>Phụ kiện</a></li>
+          <li class="title blog1"><a>Chăm sóc thú cưng <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu1">
+              <li><a href="#">Cate 1</a></li>
+              <li><a href="#">Cate 2</a></li>
+              <li><a href="#">Cate 3</a></li>
+              <li><a href="#">Cate 4</a></li>
+              <li><a href="#">Cate 5</a></li>
+            </ul>
+          </li>
+          <li class="title blog"><a>About <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#">Vdev</a></li>
+              <li><a href="#">Dung</a></li>
+              <li><a href="#">Uyên</a></li>
+              <li><a href="#">Thế Anh</a></li>
+            </ul>
+          </li>
+          <li class="title"><a>Nhiều thông tin hơn</a></li>
+          <li class="title"><a>Thương hiệu</a></li>
+          <li class="title" style="border: none;"><a>Phụ kiện khác</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+   
+
+  <div class="container">
+    <div class="user-detail">
+        <div class="user-top">
+            <div class="item">
+                <a href="/trangChu/index.html">Trang chủ</a>
+            </div>
+            <div class="item active">
+                Thông tin tài khoản
+            </div>
+        </div>  
+        <div class="menu-user">
+            <div class="account">
+                <img src="/public/img/avatar.png" alt="avatar">
+                <div class="info">
+                    Tài khoản của
+                    <strong>Username</strong>
+                </div>
+            </div>
+        <div class="detail">
+            <h3 class="title">
+                Thông tin tài khoản
+            </h3>
+            <div class="user-content">
+                <form action="">
+                    <div class="form-item">
+                        <label for="full-name" class="input-lable">Họ tên</label>
+                        <input type="text" name="full-name" id="full-name" 
+                            class="input-item">
+                    </div>
+                    <div class="form-item">
+                        <label for="username" class="input-lable">Tên đăng nhập</label>
+                        <input type="text" name="username" id="username" 
+                            class="input-item">
+                    </div>
+                
+                    <div class="form-item ">
+                        <label for="email" class="input-lable" >Email</label>
+                        <input type="text" name="email" id="email" class="input-item">
+                    </div>
+                    <div class="form-item date" id="birthday-hol">
+                        <label for="birthday" class="input-lable">Ngày sinh</label>
+                        <input autocomplete="off" class="input-item" data-date-format="DD/MM/YYYY" data-val="true"
+                         id="Birthday" name="Birthday" type="text" value="">
+                    </div>
+                        <button type="button" class="userbutton">Cập nhật</button>
+            
+                </form>
+            </div>
+        </div>    
+            
+        </div>
+    </div>
+    
+  </div>
+
+    <footer>
+        <p class="scroll-top hidden" id="icon-top" onclick="goTop()">
+          <i class="fas fa-arrow-up"></i></p>
+        <div class="footer-top">
+          <div class="footer-cates">
+            <ul class="title-cates">
+              <li><a href="#">Về Meowwoof</a></li>
+              <li><a href="#">Liên hệ với chúng tôi</a></li>
+              <li><a href="#">Hướng dẫn khách hàng</a></li>
+              <li><a href="#">Điều khoản sử dụng</a></li>
+              <li><a href="#">Chính sách hoàn trả</a></li>
+              <li><a href="#">Chính sách ưu đãi</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-content-middle">
+            <div class="footer-logo"><img src="https://meowwoof.vn/pub/media/wysiwyg/ntanh/logo_MeowWool.png" alt="logo">
+            </div>
+            <p><span style="color: #ffff00;"> PTIT </span> - Học viện Công nghê Bưu chính Viễn thông<br>
+              E-mail:&nbsp;<span>&nbsp;
+                lap-trinh-Web-ThayDung</span></p>
+            <p>Hotline: <span style="color: #ff6600;"><a href="tel://0982190010"><span style="color: #ff6600;">0965 xxx
+                    xxx</span></a></span></p>
+          </div>
+          <div class="socials-wrap">
+            <div class="title-follow">Follow Us</div>
+            <ul>
+              <li class="li-social facebook-social">
+                <a title="MeowWoof fanpage" href="#" target="_blank">
+                  <span class="fa fa-facebook icon-social"></span><span class="name-social" style="color: red;">PTIT
+                    fanpage</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="copyright">
+          <div class="footer-copyright-content">
+            <div class="copyright-footer">
+              <address>Sản phẩm, dịch vụ thú cưng, pet - Nhà phân phối tin cậy nhất <a title="meowwoof.vn" target="_blank"
+                  href="#">Ptit</a></address>
+            </div>
+            <div class="payment-footer">
+              <p><img src="https://meowwoof.vn/pub/media/wysiwyg/payment/payment-footer3.png" alt="Payment"></p>
+            </div>
+          </div>
+        </div>
+    
+    
+      </footer>
+</body>
+
+</html>

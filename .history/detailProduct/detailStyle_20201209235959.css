@@ -395,10 +395,10 @@ div.button {
 .navbar {
 	background-color: transparent;
 	padding: 10px 90px;
-	position: absolute;
-	/* top: 0; */
-	left: -50px;
-	/* right: 0; */
+	position: fixed;
+	/* top: 0;
+	left: 0; */
+	right: 0;
 	z-index: 99;
 	display: flex;
 }
@@ -539,14 +539,13 @@ div.button {
 }
 .preview_logo a {
     display: inline-block;
-    position: relative;
-	margin: 0px;
-	padding-right: 50px;
+    position: absolute;
+	margin: 5px 10px;
 	
 }
 
 .preview_logo .fas {
-    font-size: 40px;
+    font-size: 50px;
 	color: #EF5030;
 	
 }
