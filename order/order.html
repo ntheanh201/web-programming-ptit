@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/370103b70e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="order.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-content">
+        <div class="col-1">
+            <div class="main-header">
+                <h1>
+                    <i class="fas fa-paw"></i>
+                    <span class="name-web">Woof!</span></h1>
+            </div>
+            <div class="header-infor"> Thông tin nhận hàng</div>
+        <div class="content-infor">
+            <div class="email input-cus">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="name-cus input-cus">
+                <input type="text" placeholder="Họ và tên">
+            </div>
+            <div class="phone-cus input-cus">
+                <input type="text" placeholder="SDT">
+            </div>
+            <div class="add-cus input-cus">
+                <input type="text" placeholder="Địa chỉ">
+            </div>
+            <div class="note-cus">
+                <textarea class="note-cus-textarea" name="" id="" cols="30" rows="10" placeholder="Ghi chú"></textarea>
+            </div>
+        </div>
+        </div>
+        <div class="col-2">
+            <div class="header-order">Đơn hàng</div>
+            <div class="list-item-mobile hidden-mobile">
+                <div class="main-cart-mobile ">
+                    <form action="">
+                        <div class="header-cart" style="background:#fff;">
+                        </div>
+                        <div class="header-cart-content" style="background:#fff;">
+                            <div class="cart_page_mobile content-product-list">
+                                <div class="item-product -item-product-123">
+                                    <div class="item-product-cart-mobile">
+                                        <a href="../detailProduct/Detail.html" class="product-images1" title="">
+                                            <img alt="" src="../public/img/sanpham.jpg"></a>
+                                    </div>
+                                    <div class="title-product-cart-mobile">
+                                        <h3><a href="../detailProduct/Detail.html" title="">Thức ăn cho chó</a></h3>
+                                        <p>Giá: <span>500.000₫</span></p>
+                                    </div>
+                                    <div class="select-item-qty-mobile">
+                                        <div class="quantity">
+                                            <button onclick="var result = document.getElementById('quantity-item-input1234');
+                                    var resultvalue = result.value;
+                                    if (!isNaN(resultvalue) && resultvalue>1) result.value--;
+                                    return false;" class="count count-sub" type="button">–</button>
+                                            <input type="text" class="number" id="quantity-item-input1234" value="1">
+                                            <button onclick="var result = document.getElementById('quantity-item-input1234');
+                                    var resultvalue = result.value;
+                                    if (!isNaN(resultvalue)) result.value++;
+                                    return false;" class="count count-plus" type="button">+</button>
+                                        </div>
+                                        <a class="button remove-item remove-item-cart" href="javascript:;" data-id="36118033">Xoá</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-cart" style="background:#fff;">
+                        </div>
+                        <div class="header-cart-content" style="background:#fff;">
+                            <div class="cart_page_mobile content-product-list">
+                                <div class="item-product -item-product-123">
+                                    <div class="item-product-cart-mobile">
+                                        <a href="../detailProduct/Detail.html" class="product-images1" title="">
+                                            <img alt="" src="../public/img/sanpham.jpg"></a>
+                                    </div>
+                                    <div class="title-product-cart-mobile">
+                                        <h3><a href="../detailProduct/Detail.html" title="">Thức ăn cho chó</a></h3>
+                                        <p>Giá: <span>500.000₫</span></p>
+                                    </div>
+                                    <div class="select-item-qty-mobile">
+                                        <div class="quantity">
+                                            <button onclick="var result = document.getElementById('quantity-item-input1234');
+                                    var resultvalue = result.value;
+                                    if (!isNaN(resultvalue) && resultvalue>1) result.value--;
+                                    return false;" class="count count-sub" type="button">–</button>
+                                            <input type="text" class="number" id="quantity-item-input1234" value="1">
+                                            <button onclick="var result = document.getElementById('quantity-item-input1234');
+                                    var resultvalue = result.value;
+                                    if (!isNaN(resultvalue)) result.value++;
+                                    return false;" class="count count-plus" type="button">+</button>
+                                        </div>
+                                        <a class="button remove-item remove-item-cart" href="javascript:;" data-id="36118033">Xoá</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="price-order-1">
+                    <div class="price-order">Tạm tính</div>
+                    <div class="price-tag">500000</div>
+                </div>
+                <div class="price-order-1">
+                    <div class="price-order">Phí vận chuyển</div>
+                    <div class="price-tag">40000</div>
+                </div>
+            </div>
+            <div class="order-price-total">
+                <div class="price-order">Tổng cộng</div>
+                <div class="price-tag">540000</div>
+            </div>
+            <div class="order-end">
+                <div class="back-page">
+                    <a href="../cart/cart.html">Quay về giỏ hàng</a>
+                </div>
+                <div class="button-order-submit">
+                    <button class="button-submit" type="submit">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
