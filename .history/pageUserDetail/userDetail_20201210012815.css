@@ -85,7 +85,7 @@ a{
 }
 
 .container-userdetail .user-detail .detail .title {
-  font-size: 25px;
+  font-size: 19px;
   line-height: 21px;
   font-weight: 700;
   padding: 10px 0px 10px 50%;
@@ -135,7 +135,7 @@ a{
   margin-bottom: 0px;
   width: 50%;
   height: 41px;
-  margin-left: 14%;
+  margin-left: 13%;
 }
 
 .user-top .item.active::before {

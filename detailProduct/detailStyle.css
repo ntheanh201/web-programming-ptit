@@ -21,10 +21,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 * {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+=======
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Baloo Thambi 2', cursive;
+>>>>>>> uyen
 }
 
 .bg-red {
@@ -54,7 +61,12 @@ html {
   height: 100vh;
   overflow: hidden;
 }
-
+.header_logo {
+    font-size: 70px;
+    color: whitesmoke;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -180,9 +192,15 @@ div.button {
   align-items: center;
 }
 .info-wrapper {
+<<<<<<< HEAD
   margin: auto;
   position: relative;
   text-align: right;
+=======
+	margin-top: 100px;
+	position: relative;
+	text-align: right;
+>>>>>>> uyen
 }
 
 .product-name h2 {
@@ -391,6 +409,7 @@ div.button {
 }
 
 .navbar {
+<<<<<<< HEAD
   background-color: transparent;
   padding: 10px 90px;
   position: fixed;
@@ -399,6 +418,16 @@ div.button {
   right: 0;
   z-index: 99;
   display: flex;
+=======
+	background-color: transparent;
+	padding: 10px 90px;
+	position: absolute;
+	/* top: 0; */
+	left: -50px;
+	/* right: 0; */
+	z-index: 99;
+	display: flex;
+>>>>>>> uyen
 }
 
 .navbar a {
@@ -411,11 +440,15 @@ div.button {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 .navbar .logo {
   font-size: 30px;
   flex: 1;
   color: var(--black);
 }
+=======
+
+>>>>>>> uyen
 
 .navbar-right a:hover {
   color: var(--red);
@@ -531,6 +564,7 @@ div.button {
 }
 
 @keyframes bounce {
+<<<<<<< HEAD
   0% {
     transform: translateY(0);
   }
@@ -547,4 +581,26 @@ div.button {
 	width: 768px;
 	overflow: scroll;
   }
+=======
+	0% {
+		transform: translateY(0);
+	} 50% {
+		transform: translateY(-50px);
+	} 100% {
+		transform: translateY(0);
+	}
+}
+.preview_logo a {
+    display: inline-block;
+    position: relative;
+	margin: 0px;
+	padding-right: 50px;
+	
+}
+
+.preview_logo .fas {
+    font-size: 40px;
+	color: #EF5030;
+	
+>>>>>>> uyen
 }

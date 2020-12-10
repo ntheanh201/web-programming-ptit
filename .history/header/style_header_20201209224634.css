@@ -151,7 +151,7 @@ body {
   position: absolute;
   background: #ef5030;
   margin-top: 11px;
-
+  margin-left: 5px;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul {
@@ -321,6 +321,6 @@ a {
   padding: 12px 20px 12px 12px;
   position: absolute;
   top: 110px;
-  right: 82px;
+  right: 122px;
   z-index: 95;
 }

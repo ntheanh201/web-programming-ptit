@@ -1,16 +1,13 @@
-body{
-  margin: 0px;
-  padding: 0px;
-}
 .container-userdetail {
   width: 100%;
-  font-family: "Baloo Thambi 2", cursive;
+  /* font-family: "Baloo Thambi 2", cursive; */
 }
 a{
   text-decoration: none;
 }
 .container-userdetail .user-detail {
   position: relative;
+  padding: 0px;
   width: 100%;
 }
 
@@ -18,15 +15,18 @@ a{
   width: 100%;
   font-weight: bold;
   background-color: rgb(103, 84, 68);
+  /* -ms-flex-preferred-size: 100%; */
   flex-basis: 100%;
-  /* height: 41px; */
+  padding: 0px;
+  margin: 0px;
+  height: 41px;
   border: none;
   position: relative ;
 }
 
 .container-userdetail .user-detail .user-top .item {
-  padding: 10px 20px 10px 40px;
-  font-size: 14px;
+  padding: 13px 0px;
+  font-size: 13px;
   display: inline-block;
   position: relative;
   color: white;
@@ -64,10 +64,10 @@ a{
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0%;
   flex: 1 1 0%;
-  font-size: 15x;
+  font-size: 13px;
   line-height: 15px;
   color: #333333;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .container-userdetail .user-detail .menu-user .account .info .strong {
@@ -85,19 +85,17 @@ a{
 }
 
 .container-userdetail .user-detail .detail .title {
-  font-size: 25px;
+  font-size: 19px;
   line-height: 21px;
   font-weight: 700;
-  padding: 10px 0px 10px 50%;
-  /* margin: 20px 0px 15px; */
+  margin: 20px 0px 15px;
 }
 
 .container-userdetail .user-detail .detail .user-content {
   background-color: white;
   padding: 30px 20px;
   border-radius: 4px;
-  text-align: center;
-  position: relative;
+  margin-left: 30%;
 }
 
 .container-userdetail .user-detail .detail .user-content .form-item {
@@ -133,9 +131,9 @@ a{
   font-size: 14px;
   border-radius: 4px;
   margin-bottom: 0px;
-  width: 50%;
+  width: 30%;
   height: 41px;
-  margin-left: 14%;
+  margin-left: 18%;
 }
 
 .user-top .item.active::before {
