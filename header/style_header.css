@@ -17,7 +17,9 @@
   background-position: center;
   background-size: cover;
 }
-
+.fa-paw {
+  font-size: 1em;
+}
 .nav_web,
 .preview_header {
   text-align: center;
