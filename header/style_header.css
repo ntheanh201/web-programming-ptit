@@ -17,7 +17,9 @@
   background-position: center;
   background-size: cover;
 }
-
+.fa-paw {
+  font-size: 1em;
+}
 .nav_web,
 .preview_header {
   text-align: center;
@@ -270,7 +272,6 @@ a {
 .nav_bars-bth ul {
   display: none;
 } 
-
   @media (max-width: 768px) {
   .menu-bar .nav_bars-bth,
   .nav_mobile {
