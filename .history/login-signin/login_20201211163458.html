@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../login-signin/stylelog.css">
     <link rel="stylesheet" href="../header/style_header.css">
-    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../footer/footer.csss">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
@@ -65,7 +65,8 @@
                     <i class="fas fa-search">
                     </i>
                     <form method="GET" class="form-search">
-                        <input type="text" placeholder="tìm kiếm ..." >
+                        <input type="text" placeholder="tìm kiếm ..." style="    top: 59px;
+                        right: 59px;">
                     </form>
                 </div>
 
@@ -201,7 +202,29 @@
               All rights reserved by ©CompanyName 2020 </p>
       </div>
   </footer>
-  
+      <script>
+        $(".button-login").click(function () {
+        // var postcode = $(this).parents(".postcode-input")
+        //     .children("input").val();
+        // First do some basic validation of the postcode like
+        // correct format etc.
+        var username = $("#username").value();
+        console.log("username : ", username)
+  /* 	    if (!validatePostcode(postcode)) {
+            alert("Invalid Postal Code, please try again");
+            return false;
+        }
+        var finalUrl = BASE_URL += "?postcode=" + postcode; 
+        $.ajax({
+            url: finalUrl,
+            cache: false,
+            success: function (html) {
+                // Parse the recieved data here.
+                console.log(html);
+            }
+        }); */
+    });
+      </script>
 </body>
 
 </html>

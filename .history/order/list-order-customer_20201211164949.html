@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pageUserDetail/userDetail.css">
-    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../shipper/order-ship.css">
     <link rel="stylesheet" href="../header/style_header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/solid.min.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;800&display=swap" rel="stylesheet">
-    <title>User Detail</title>
+    <title>List Order Customer</title>
 </head>
+
 
 <body>
     <div class="header">
         <div class="preview_header">
             <div class="preview_logo">
                 <a href="#" class="header_logo">
-                    <i class="fas fa-paw"><span >WOOF!</span> </i>
+                    <i class="fas fa-paw"><span>WOOF!</span> </i>
 
                 </a>
 
@@ -45,7 +47,7 @@
                     <li><a href="#"><i class="fas fa-dog"></i>Đồ cho chó</a></li>
                     <li><a href="#"><i class="fas fa-cat"></i>Đồ cho mèo</a></li>
                     <a href="#" class="header_logo">
-                        <i class="fas fa-paw"  style="font-size: 1em;"><span>WOOF!</span></i>
+                        <i class="fas fa-paw" style="font-size: 1em;"><span>WOOF!</span></i>
 
                     </a>
                     <li><a href="#"><i class="fa fa-users"></i>Chăm sóc thú cưng</a>
@@ -93,73 +95,100 @@
 
         </div>
     </div>
-    <div class="container-userdetail">
-        <div class="user-detail">
-
-            <div class="title-main">
-                <span class="icon-home">
-                    <a href="../trangChu/index.html">
-                        <i class="fas fa-home"></i>
-                    </a>
-                </span>
-                <span class="tai-khoan">Thông tin tài khoản
-                    <i class="fas fa-users-cog"></i>
-                </span>
-            </div>
-
-            <div class="menu-user">
-                <div class="account">
-                    <img src="/public/img/avatar.png" alt="avatar">
-                    <div class="info">
-                        Tài khoản của
-                        <strong>Username</strong>
-                    </div>
-                </div>
-                <div class="detail">
-                    <h3 class="title">
-                        Thông tin tài khoản
-                    </h3>
-                    <div class="user-content">
-                        <form action="">
-                            <div class="form-item">
-                                <label for="full-name" class="input-lable">Họ tên</label>
-                                <input type="text" name="full-name" id="full-name" class="input-item">
-                            </div>
-                            <div class="form-item">
-                                <label for="username" class="input-lable">Tên đăng nhập</label>
-                                <input type="text" name="username" id="username" class="input-item">
-                            </div>
-                            <div class="form-item ">
-                                <label for="phonenumber" class="input-lable">Số điện thoại</label>
-                                <input type="text" name="phonenumber" id="phonenumber" class="input-item">
-                            </div>
-                            <div class="form-item ">
-                                <label for="address" class="input-lable">Địa chỉ</label>
-                                <input type="text" name="address" id="address" class="input-item">
-                            </div>
-                            <div class="form-item ">
-                                <label for="email" class="input-lable">Email</label>
-                                <input type="text" name="email" id="email" class="input-item">
-                            </div>
-                            
-                            <button type="button" class="userbutton">Cập nhật</button>
-
-                        </form>
-                    </div>
-                </div>
-
-            </div>
+    <div class="container-shipper">
+        <div class="ship-detail">
+          <div class="title-main">
+            <span class="icon-home">
+              <a href="../trangChu/index.html">
+                <i class="fas fa-home"></i>
+              </a>
+            </span>
+            <span class="tai-khoan">Thông tin đơn hàng
+              <i class="fas fa-shipping-fast"></i>
+            </span>
+          </div>
+    
+          <table class="pure-table pure-table-bordered">
+            <thead>
+              <tr>
+                <th>Mã đơn hàng</th>
+                <th>Ngày nhận đơn</th>
+                <th>Địa chỉ</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái đơn hàng</th>
+                <th>Chi tiết</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2018-01-13 Friday at 10:00 AM</td>
+                <td>Ha Noi</td>
+                <td>540000 VND</td>
+                <td>
+                  Đã hủy</td>
+                <td>
+                  <a class="pure-button button-small button-secondary" href="#">Xem</a>
+                </td>
+              </tr>
+    
+              <tr>
+                <td>2</td>
+                <td>2018-01-13 Friday at 10:00 AM</td>
+                <td>Ha Noi</td>
+                <td>540000 VND</td>
+                <td>Giao hàng thành công</td>
+                <td>
+                  <a class="pure-button button-small button-secondary" href="#">Xem</a>
+                </td>
+              </tr>
+    
+    
+              <tr>
+                <td>3</td>
+                <td>2018-01-13 Friday at 10:00 AM</td>
+                <td>Ha Noi</td>
+                <td>540000 VND</td>
+                <td>
+                  Đang kiểm tra
+                  <select id="status" class="pure-input-1">
+                    <option value="1">Đang kiểm tra</option>
+                    <option value="2">Đang vận chuyển</option>
+                    <option value="3">Giao hàng thành công</option>
+                    <option value="4">Đã hủy</option>
+                  </select></td>
+                <td>
+                  <a class="pure-button button-small button-secondary" href="#">Xem</a>
+                </td>
+              </tr>
+    
+              <tr>
+                <td>4</td>
+                <td>2018-01-13 Friday at 10:00 AM</td>
+                <td>Ha Noi</td>
+                <td>540000 VND</td>
+                <td>
+                  Đang vận chuyển
+                <td>
+                  <a class="pure-button button-small button-secondary" href="#">Xem</a>
+                </td>
+              </tr>
+    
+    
+            </tbody>
+          </table>
         </div>
-
-    </div>
-  
+      </div>
     <footer class="footer">
         <div class="l-footer">
             <h1>
                 <i class="fas fa-paw"></i>
                 <span class="name-web">Woof!</span></h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt
+                molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis
+                recusandae.</p>
             <div class="social-media">
                 <a href="#" title=""><i class="fa fa-twitter"></i></a>
                 <a href="#" title=""><i class="fa fa-facebook"></i></a>
@@ -206,7 +235,7 @@
                 All rights reserved by ©CompanyName 2020 </p>
         </div>
     </footer>
-<script src="../header/style.js"></script>
+
 </body>
 
 </html>

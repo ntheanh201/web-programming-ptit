@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../login-signin/stylelog.css">
+    <link rel="stylesheet" href="/login-signin/stylelog.css">
     <link rel="stylesheet" href="../header/style_header.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/solid.min.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;800&display=swap" rel="stylesheet">
     <title>Login</title>
@@ -43,11 +42,11 @@
     <div class="menu-bar">
         <div class="nav_web" id="nav-header">
             <ul class="nav" style="height: 80px; margin-left: 3%;">
-                <li class="active"><a href="../trangChu/index.html"><i class="fa fa-home"></i>Trang chủ</a></li>
+                <li class="active"><a href="#"><i class="fa fa-home"></i>Trang chủ</a></li>
                 <li><a href="#"><i class="fas fa-dog"></i>Đồ cho chó</a></li>
                 <li><a href="#"><i class="fas fa-cat"></i>Đồ cho mèo</a></li>
                 <a href="#" class="header_logo">
-                    <i class="fas fa-paw"  style="font-size: 1em;"><span>WOOF!</span></i>
+                    <i class="fas fa-paw"><span>WOOF</span></i>
 
                 </a>
                 <li><a href="#"><i class="fa fa-users"></i>Chăm sóc thú cưng</a>
@@ -65,15 +64,19 @@
                     <i class="fas fa-search">
                     </i>
                     <form method="GET" class="form-search">
-                        <input type="text" placeholder="tìm kiếm ..." >
+                        <input type="text" placeholder="tìm kiếm ...">
                     </form>
                 </div>
 
             </ul>
         </div>
         <div class="nav_bars-bth">
+
+
             <i class="fas fa-bars"></i>
+
             <ul class="nav_mobile">
+
                 <li><a href="#" class="nav__mobile-link"><i class="fa fa-home"></i>Trang chủ</a></li>
                 <li><a href="#" class="nav__mobile-link"><i class="fas fa-dog"></i>Đồ cho chó</a></li>
                 <li><a href="#" class="nav__mobile-link"><i class="fas fa-cat"></i>Đồ cho mèo</a></li>
@@ -94,6 +97,8 @@
         </div>
 
     </div>
+    
+
 </div>
     <div class="contain form-login" id="form-login">
         <div class="wapper" onclick="showFormLogin()"></div>
@@ -201,7 +206,29 @@
               All rights reserved by ©CompanyName 2020 </p>
       </div>
   </footer>
-  
+      <script>
+        $(".button-login").click(function () {
+        // var postcode = $(this).parents(".postcode-input")
+        //     .children("input").val();
+        // First do some basic validation of the postcode like
+        // correct format etc.
+        var username = $("#username").value();
+        console.log("username : ", username)
+  /* 	    if (!validatePostcode(postcode)) {
+            alert("Invalid Postal Code, please try again");
+            return false;
+        }
+        var finalUrl = BASE_URL += "?postcode=" + postcode; 
+        $.ajax({
+            url: finalUrl,
+            cache: false,
+            success: function (html) {
+                // Parse the recieved data here.
+                console.log(html);
+            }
+        }); */
+    });
+      </script>
 </body>
 
 </html>

@@ -201,7 +201,29 @@
               All rights reserved by ©CompanyName 2020 </p>
       </div>
   </footer>
-  
+      <script>
+        $(".button-login").click(function () {
+        // var postcode = $(this).parents(".postcode-input")
+        //     .children("input").val();
+        // First do some basic validation of the postcode like
+        // correct format etc.
+        var username = $("#username").value();
+        console.log("username : ", username)
+  /* 	    if (!validatePostcode(postcode)) {
+            alert("Invalid Postal Code, please try again");
+            return false;
+        }
+        var finalUrl = BASE_URL += "?postcode=" + postcode; 
+        $.ajax({
+            url: finalUrl,
+            cache: false,
+            success: function (html) {
+                // Parse the recieved data here.
+                console.log(html);
+            }
+        }); */
+    });
+      </script>
 </body>
 
 </html>
