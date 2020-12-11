@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../login-signin/stylelog.css">
     <link rel="stylesheet" href="../header/style_header.css">
-    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../footer/footer.csss">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/fontawesome.min.css" rel="stylesheet">
     <link href="../fontawesome-free-5.14.0-web/css/brands.min.css" rel="stylesheet">
@@ -43,11 +43,11 @@
     <div class="menu-bar">
         <div class="nav_web" id="nav-header">
             <ul class="nav" style="height: 80px; margin-left: 3%;">
-                <li class="active"><a href="../trangChu/index.html"><i class="fa fa-home"></i>Trang chủ</a></li>
+                <li class="active"><a href="#"><i class="fa fa-home"></i>Trang chủ</a></li>
                 <li><a href="#"><i class="fas fa-dog"></i>Đồ cho chó</a></li>
                 <li><a href="#"><i class="fas fa-cat"></i>Đồ cho mèo</a></li>
                 <a href="#" class="header_logo">
-                    <i class="fas fa-paw"  style="font-size: 1em;"><span>WOOF!</span></i>
+                    <i class="fas fa-paw"><span>WOOF</span></i>
 
                 </a>
                 <li><a href="#"><i class="fa fa-users"></i>Chăm sóc thú cưng</a>
@@ -65,15 +65,19 @@
                     <i class="fas fa-search">
                     </i>
                     <form method="GET" class="form-search">
-                        <input type="text" placeholder="tìm kiếm ..." >
+                        <input type="text" placeholder="tìm kiếm ...">
                     </form>
                 </div>
 
             </ul>
         </div>
         <div class="nav_bars-bth">
+
+
             <i class="fas fa-bars"></i>
+
             <ul class="nav_mobile">
+
                 <li><a href="#" class="nav__mobile-link"><i class="fa fa-home"></i>Trang chủ</a></li>
                 <li><a href="#" class="nav__mobile-link"><i class="fas fa-dog"></i>Đồ cho chó</a></li>
                 <li><a href="#" class="nav__mobile-link"><i class="fas fa-cat"></i>Đồ cho mèo</a></li>
@@ -94,6 +98,22 @@
         </div>
 
     </div>
+    <div class="show">
+        <div class="slide_show">
+            <div class="dieuhuong">
+                <i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+                <i class="fa fa-chevron-circle-right" onclick="Next();"></i>
+            </div>
+            <div class="slides">
+                <img src="../header/img/thu-cung.jpg" alt="">
+                <img src="../header/img/thu-cung-dang-yeu-7.jpg" alt="">
+                <img src="../header/img/share_fb_home.png" alt="">
+                <img src="../header/img/dog-cat.png" alt="">
+                <img src="../header/img/dogs-and-cats-pets_pixabay.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
 </div>
     <div class="contain form-login" id="form-login">
         <div class="wapper" onclick="showFormLogin()"></div>
@@ -148,60 +168,30 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-      <div class="l-footer">
-          <h1>
-              <i class="fas fa-paw"></i>
-              <span class="name-web">Woof!</span></h1>
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
-          <div class="social-media">
-              <a href="#" title=""><i class="fa fa-twitter"></i></a>
-              <a href="#" title=""><i class="fa fa-facebook"></i></a>
-              <a href="#" title=""><i class="fa fa-google-plus"></i></a>
-              <a href="#" title=""><i class="fa fa-instagram"></i></a>
-          </div>
-      </div>
-      <ul class="r-footer">
-          <li>
-              <h2 class="title-footer">
-                  Social</h2>
-              <ul class="box">
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">Pinterest</a></li>
-                  <li><a href="#">Dribbble</a></li>
-              </ul>
-          </li>
-          <li class="features">
-              <h2 class="title-footer">
-                  Information</h2>
-              <ul class="box h-box">
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Sales</a></li>
-                  <li><a href="#">Tickets</a></li>
-                  <li><a href="#">Certifications</a></li>
-                  <li><a href="#">Customer Service</a></li>
-              </ul>
-          </li>
-
-          <li>
-              <h2 class="title-footer">
-                  Legal</h2>
-              <ul class="box">
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Use</a></li>
-                  <li><a href="#">Contract</a></li>
-              </ul>
-          </li>
-      </ul>
-      <div class="b-footer">
-          <p>
-              All rights reserved by ©CompanyName 2020 </p>
-      </div>
-  </footer>
-  
+   
+      <script>
+        $(".button-login").click(function () {
+        // var postcode = $(this).parents(".postcode-input")
+        //     .children("input").val();
+        // First do some basic validation of the postcode like
+        // correct format etc.
+        var username = $("#username").value();
+        console.log("username : ", username)
+  /* 	    if (!validatePostcode(postcode)) {
+            alert("Invalid Postal Code, please try again");
+            return false;
+        }
+        var finalUrl = BASE_URL += "?postcode=" + postcode; 
+        $.ajax({
+            url: finalUrl,
+            cache: false,
+            success: function (html) {
+                // Parse the recieved data here.
+                console.log(html);
+            }
+        }); */
+    });
+      </script>
 </body>
 
 </html>

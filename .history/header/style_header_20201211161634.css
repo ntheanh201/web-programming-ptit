@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  margin: 0px;
+  min-width: 768px;
+  border: 0px;
+  font-weight: 400;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav_web,
+.preview_header {
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.header .preview_header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(103, 84, 68);
+  line-height: 54px;
+  margin-bottom: 1px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+}
+
+.preview_logo {
+  width: 10%;
+  margin: 0px 30px;
+  float: left;
+}
+
+.preview_logo a {
+  display: inline-block;
+  position: absolute;
+  margin: 5px 10px;
+}
+
+.preview_logo .fas {
+  font-size: 35px;
+  color: white;
+}
+
+.preview-method {
+  margin-right: 3%;
+  display: flex;
+}
+
+.preview-method .fas {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 5px 20px 5px 5px;
+}
+
+.menu-bar {
+  background-color: #f19f1f;
+  width: 100%;
+}
+
+.menu-bar ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+
+}
+
+.menu-bar ul li {
+  width: 170px;
+  padding: 30px 0px 0px 0px;
+
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background: #ef5030;
+  position: relative;
+}
+
+.menu-bar .header_logo {
+  font-size: 60px;
+  color: whitesmoke;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.menu-bar .fa,
+.menu-bar .fas {
+  margin-right: 8px;
+}
+
+.sub-menu-1 {
+  display: none;
+  width: 100%;
+  /* z-index: 999; */
+  position: relative;
+}
+
+.sub-menu-2 {
+  display: none;
+}
+.nav_mobile{
+  margin: 0;
+}
+.nav_mobile li:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  background: #ef5030;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.nav_mobile li:hover .sub-menu-2 li {
+  border-bottom: 1px dotted #fff;
+}
+
+.nav_mobile li:hover .sub-menu-2 ul li a:hover {
+  color: rgb(199, 206, 211);
+}
+
+.nav_mobile li:hover .sub-menu-2 ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: #ef5030;
+  margin-top: 11px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px dotted #fff;
+  text-align: center;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: rgb(199, 206, 211);
+}
+
+.menu-bar .search {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+/* .show {
+  background-color: #ffffff;
+  margin: 0px 0px 0px 0px;
+}
+
+.slide_show {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.dieuhuong {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  top: 50%;
+  left: 2%;
+  width: 100%;
+}
+
+.dieuhuong i:last-child {
+  position: relative;
+  right: -85%;
+}
+
+.slides {
+  width: 1000%;
+  display: flex;
+}
+
+.slides img {
+    width: 10%;
+    max-height: 500px;
+    object-fit: cover;
+} */
+
+a {
+  text-decoration: none;
+}
+
+.nav_bars-bth {
+  font-size: 40px;
+  color: rgb(231, 107, 107);
+  display: none;
+  color: #fff;
+  width: 100%;
+  min-height: 50px;
+
+}
+
+
+.nav_bars-bth ul {
+  display: inline;
+  text-align: left;
+  float: none !important;
+}
+
+.nav_bars-bth ul li {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+.nav_bars-bth li {
+  list-style: none;
+}
+
+.nav_bars-bth ul {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .menu-bar .nav_bars-bth,
+  .nav_mobile {
+    display: inline-block;
+    
+  }
+  .menu-bar .nav_web {
+    display: none;
+
+  }
+}
+.search .form-search{
+  display: none;
+}
+.search:hover> .form-search{
+  display: block !important;
+}
+.fas.fa-bars{
+  margin-left: 5%;
+}
+@keyframes scroll {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 100px;
+  }
+
+}
+
+.hidden {
+  display: none !important;
+}
+
+.fix-menu {
+  width: 100%;
+  position: fixed !important;
+  z-index: 1000;
+  top: 0;
+  background-color:#f19f1f; 
+  background-size: contain;
+}
+.fix-menu a, .fix-menu p {
+	color: white !important;
+}
+
+.search .form-search input[type=text] {
+  cursor: pointer;
+  width: 200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family:"Baloo Thambi 2", cursive;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 12px;
+  position: absolute;
+  top: 110px;
+  right: 82px;
+  z-index: 95;
+}
