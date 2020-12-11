@@ -370,15 +370,110 @@ th {
 .pure-form-stacked input[type="email"],
 .pure-form-stacked input[type="number"],
 .pure-form-stacked input[type="search"],
-.pure-form-stacked input[type="text"] {
+.pure-form-stacked input[type="text"],
+.pure-form-stacked label,
+.pure-form-stacked select,
+.pure-form-stacked textarea {
   display: block;
   margin: 0.25em 0;
+}
+.pure-form-aligned .pure-help-inline,
+.pure-form-aligned input,
+.pure-form-aligned select,
+.pure-form-aligned textarea,
+.pure-form-message-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.pure-form-aligned textarea {
+  vertical-align: top;
+}
+.pure-form-aligned .pure-control-group {
+  margin-bottom: 0.5em;
+}
+.pure-form-aligned .pure-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+.pure-form-aligned .pure-controls {
+  margin: 1.5em 0 0 11em;
+}
+.pure-form .pure-input-rounded,
+.pure-form input.pure-input-rounded {
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+.pure-form .pure-group fieldset {
+  margin-bottom: 10px;
+}
+.pure-form .pure-group input,
+.pure-form .pure-group textarea {
+  display: block;
+  padding: 10px;
+  margin: 0 0 -1px;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+.pure-form .pure-group input:focus,
+.pure-form .pure-group textarea:focus {
+  z-index: 3;
+}
+.pure-form .pure-group input:first-child,
+.pure-form .pure-group textarea:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+.pure-form .pure-group input:first-child:last-child,
+.pure-form .pure-group textarea:first-child:last-child {
+  top: 1px;
+  border-radius: 4px;
+  margin: 0;
+}
+.pure-form .pure-group input:last-child,
+.pure-form .pure-group textarea:last-child {
+  top: -2px;
+  border-radius: 0 0 4px 4px;
+  margin: 0;
+}
+.pure-form .pure-group button {
+  margin: 0.35em 0;
 }
 .pure-form .pure-input-1 {
   width: 100%;
 }
-
-
+.pure-form .pure-input-3-4 {
+  width: 75%;
+}
+.pure-form .pure-input-2-3 {
+  width: 66%;
+}
+.pure-form .pure-input-1-2 {
+  width: 50%;
+}
+.pure-form .pure-input-1-3 {
+  width: 33%;
+}
+.pure-form .pure-input-1-4 {
+  width: 25%;
+}
+.pure-form .pure-help-inline,
+.pure-form-message-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+.pure-form-message {
+  display: block;
+  color: #666;
+  font-size: 0.875em;
+}
 @media only screen and (max-width: 480px) {
   .pure-form button[type="submit"] {
     margin: 0.7em 0 0;
@@ -386,6 +481,15 @@ th {
   .pure-form input:not([type]),
   .pure-form input[type="password"],
   .pure-form input[type="email"],
+  .pure-form input[type="url"],
+  .pure-form input[type="date"],
+  .pure-form input[type="month"],
+  .pure-form input[type="time"],
+  .pure-form input[type="datetime"],
+  .pure-form input[type="datetime-local"],
+  .pure-form input[type="week"],
+  .pure-form input[type="tel"],
+  .pure-form input[type="color"],
   .pure-form input[type="number"],
   .pure-form input[type="search"],
   .pure-form input[type="text"],
@@ -393,7 +497,45 @@ th {
     margin-bottom: 0.3em;
     display: block;
   }
-
+  .pure-group input:not([type]),
+  .pure-group input[type="password"],
+  .pure-group input[type="email"],
+  .pure-group input[type="url"],
+  .pure-group input[type="date"],
+  .pure-group input[type="month"],
+  .pure-group input[type="time"],
+  .pure-group input[type="datetime"],
+  .pure-group input[type="datetime-local"],
+  .pure-group input[type="week"],
+  .pure-group input[type="tel"],
+  .pure-group input[type="color"],
+  .pure-group input[type="number"],
+  .pure-group input[type="search"],
+  .pure-group input[type="text"] {
+    margin-bottom: 0;
+  }
+  .pure-form-aligned .pure-control-group label {
+    margin-bottom: 0.3em;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .pure-form-aligned .pure-controls {
+    margin: 1.5em 0 0;
+  }
+  .pure-form .pure-help-inline,
+  .pure-form-message,
+  .pure-form-message-inline {
+    display: block;
+    font-size: 0.75em;
+    padding: 0.2em 0 0.8em;
+  }
+}
+.pure-menu-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
 }
 .pure-menu-item,
 .pure-menu-list {
@@ -423,16 +565,77 @@ th {
   display: inline-block;
 }
 .pure-menu-horizontal .pure-menu-heading,
-.pure-menu-horizontal .pure-menu-item {
+.pure-menu-horizontal .pure-menu-item,
+.pure-menu-horizontal .pure-menu-separator {
   display: inline-block;
   vertical-align: middle;
 }
 .pure-menu-item .pure-menu-item {
   display: block;
 }
-
-
-
+.pure-menu-children {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+.pure-menu-horizontal .pure-menu-children {
+  left: 0;
+  top: auto;
+  width: inherit;
+}
+.pure-menu-active > .pure-menu-children,
+.pure-menu-allow-hover:hover > .pure-menu-children {
+  display: block;
+  position: absolute;
+}
+.pure-menu-has-children > .pure-menu-link:after {
+  padding-left: 0.5em;
+  content: "\25B8";
+  font-size: small;
+}
+.pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {
+  content: "\25BE";
+}
+.pure-menu-scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.pure-menu-scrollable .pure-menu-list {
+  display: block;
+}
+.pure-menu-horizontal.pure-menu-scrollable .pure-menu-list {
+  display: inline-block;
+}
+.pure-menu-horizontal.pure-menu-scrollable {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5em 0;
+}
+.pure-menu-horizontal.pure-menu-scrollable::-webkit-scrollbar {
+  display: none;
+}
+.pure-menu-horizontal .pure-menu-children .pure-menu-separator,
+.pure-menu-separator {
+  background-color: #ccc;
+  height: 1px;
+  margin: 0.3em 0;
+}
+.pure-menu-horizontal .pure-menu-separator {
+  width: 1px;
+  height: 1.3em;
+  margin: 0 0.3em;
+}
+.pure-menu-horizontal .pure-menu-children .pure-menu-separator {
+  display: block;
+  width: auto;
+}
 .pure-menu-heading {
   text-transform: uppercase;
   color: #565d64;
@@ -440,14 +643,21 @@ th {
 .pure-menu-link {
   color: #777;
 }
-
+.pure-menu-children {
+  background-color: #fff;
+}
+.pure-menu-disabled,
 .pure-menu-heading,
 .pure-menu-link {
   padding: 0.5em 1em;
 }
-
-
-
+.pure-menu-disabled {
+  opacity: 0.5;
+}
+.pure-menu-disabled .pure-menu-link:hover {
+  background-color: transparent;
+}
+.pure-menu-active > .pure-menu-link,
 .pure-menu-link:focus,
 .pure-menu-link:hover {
   background-color: #eee;
