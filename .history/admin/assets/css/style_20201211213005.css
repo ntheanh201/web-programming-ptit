@@ -131,6 +131,7 @@ table {
 .column-warning,
 .buble-warning,
 .button-secondary,
+
 .buble-secondary {
   color: white;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -161,9 +162,20 @@ table {
 .button-xxsmall {
   font-size: 40%;
 }
+.button-xsmall {
+  font-size: 70%;
+}
 
 .button-small {
   font-size: 85%;
+}
+
+.button-large {
+  font-size: 110%;
+}
+
+.button-xlarge {
+  font-size: 125%;
 }
 
 /*Menu*/
