@@ -195,8 +195,7 @@ table {
   display: block;
 }
 #menu .pure-menu li a:hover,
-#menu .pure-menu-selected,
-#menu .pure-menu-selected a {
+#menu .pure-menu-selected, {
   color: #fff;
   background: #1f8dd6;
 }

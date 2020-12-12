@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Supplier Detail</title>
+  <script src="https://kit.fontawesome.com/370103b70e.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/pure-min.css" />
+  <link rel="stylesheet" href="assets/css/pure-responsive-min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div id="layout" class="">
+    <div class="sidebar sidebar-admin-nav sidebar-common-mobie">
+      <div id="menu">
+        <div class="pure-menu">
+          <p class="pure-menu-heading">
+            Woof Admin
+            <a href="login.html" class="pure-button button-xxsmall">OUT</a>
+          </p>
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+              <a href="dashboard.html" class="pure-menu-link">Dashboard</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="post-list.html" class="pure-menu-link">Products List</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="post-form.html" class="pure-menu-link">Add Products</a>
+            </li>
+            <li class="pure-menu-item menu-item-divided pure-menu-selected">
+              <a href="option-list.html" class="pure-menu-link">Orders List</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="customer-list.html" class="pure-menu-link">Customer List</a>
+            </li>
+            <li class="menu-item-divided">
+              <a href="supplier-list.html" class="pure-menu-link">Supplier List</a>
+            </li>
+            <li class="pure-menu-item menu-item-divided">
+              <a href="profile.html" class="pure-menu-link">My Profile</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="header-small">
+        <div class="items">
+          <h1 class="subhead">Supplier Detail</h1>
+          <div class="address note">
+            <p><i class="fa fa-user"></i> ID</p>
+            <p><i class="fas fa-file-signature"></i>Dun</p>
+            <p><i class="fa fa-map-marker"></i>
+                109 Nguyễn Văn Trỗi, Hà Đông, Hà Nội
+            </p>
+            <p><i class="fa fa-phone"></i> 0793220699</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+      <div class="header-small">
+        <div class="items">
+          <h1 class="subhead">
+            Post List
+            <a class="pure-button" href="post-form.html">Add New</a>
+          </h1>
+          <table class="pure-table pure-table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Post Name 1</td>
+                <td>2018-01-13 Friday at 10:00 AM</td>
+                <td>Active</td>
+                <td>
+                  <a class="pure-button" href="#">View</a>
+                  <a class="pure-button button-view-cus " href="post-form.html">Edit</a>
+                  <a class="pure-button " href="#"
+                    onclick="return confirm('Are you sure?');">Delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Post Name 2</td>
+                <td>2018-01-13 Friday at 10:00 AM</td>
+                <td>Draft</td>
+                <td>
+                  <a class="pure-button " href="#">View</a>
+                  <a class="pure-button button-view-cus" href="post-form.html">Edit</a>
+                  <a class="pure-button " href="#"
+                    onclick="return confirm('Are you sure?');">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
