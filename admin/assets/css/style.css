@@ -23,8 +23,45 @@ table {
   width: 100%;
 }
 
-.pull-right {
-  float: right !important;
+/*Main Page*/
+ .nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+  display: inline;
+}
+
+.nav ul li a {
+  background: transparent;
+  border: 2px solid rgb(176, 202, 219);
+  color: #fff;
+  margin-top: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+ 
+.nav ul li a:hover,
+.nav ul li a:focus,
+.nav ul li .active {
+  border: 2px solid rgb(61, 146, 201);
+  text-decoration: none;
+} 
+
+/*Content*/
+ .content {
+  padding: 2em 1em 0;
+}
+/*Sidebar*/
+.sidebar {
+  background: rgb(61, 79, 93);
+  color: #fff;
+} 
+.header-large{
+  margin: 2em;
 }
 .subhead {
   text-transform: uppercase;
@@ -35,43 +72,7 @@ table {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
-.pure-message {
-  padding: 0.2em 1em;
-  margin-bottom: 0.2em;
-  font-size: 85%;
-}
-
-/*Main Page*/
-
-.nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.nav ul li {
-  display: inline-block;
-  *display: inline;
-}
-.nav ul li a {
-  background: transparent;
-  border: 2px solid rgb(176, 202, 219);
-  color: #fff;
-  margin-top: 1em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-size: 85%;
-}
-.nav ul li a:hover,
-.nav ul li a:focus,
-.nav ul li .active {
-  border: 2px solid rgb(61, 146, 201);
-  text-decoration: none;
-}
-
-/*Content*/
-.content {
-  padding: 2em 1em 0;
-}
+/*  
 .column-block {
   margin: 0 0.5em 2em;
   padding: 0;
@@ -105,46 +106,54 @@ table {
   padding: 1em;
   background: #f7f7f7;
   border-bottom: 1px solid #e7e7e7;
-}
+} */
 
-/*Sidebar*/
-.sidebar {
-  background: rgb(61, 79, 93);
-  color: #fff;
-}
+/* .pull-right {
+  float: right !important;
+} */
+
+/* .pure-message {
+  padding: 0.2em 1em;
+  margin-bottom: 0.2em;
+  font-size: 85%;
+} */
+
 
 /*Button*/
-.buble-success,
+/* .buble-success,
 .buble-warning,
 .buble-secondary {
   padding: 0.5em;
   border-radius: 4px;
-}
+} */
 
-.button-success,
-.message-success,
-.column-success,
-.buble-success,
-.button-error,
-.message-error,
-.message-warning,
-.column-warning,
-.buble-warning,
-.button-secondary,
-.buble-secondary {
+.button-success
+/* .message-success, */
+/* .column-success, */
+/* .buble-success, */
+/* .button-error, */
+ /* .message-error, */
+/* .message-warning, */
+/* .column-warning, */
+/* .buble-warning, */
+/* .button-secondary, */
+/* .buble-secondary  */
+{
   color: white;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
+  
 
-.button-success,
-.message-success,
-.column-success,
-.buble-success {
+.button-success
+/* .message-success, */
+/* .column-success, */
+/* .buble-success  */
+{
   background: rgb(28, 184, 65);
 }
-
+/*  
 .button-error,
-.message-error{
+.message-error {
   background: rgb(202, 60, 60);
 }
 
@@ -164,14 +173,14 @@ table {
 
 .button-small {
   font-size: 85%;
-}
+} */
 
 /*Menu*/
-#menu {
+ #menu {
   z-index: 1000;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
+
 #menu a {
   color: #999;
   border: none;
@@ -185,20 +194,12 @@ table {
   background: transparent;
   display: block;
 }
-
-#menu .pure-menu ul,
-#menu .pure-menu .menu-item-divided {
-  border-top: 1px solid #354755;
-}
-
 #menu .pure-menu li a:hover,
-#menu .pure-menu li a:focus,
 #menu .pure-menu-selected,
 #menu .pure-menu-selected a {
   color: #fff;
   background: #1f8dd6;
 }
-
 #menu .pure-menu-heading {
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -206,19 +207,28 @@ table {
   padding: 0.5em 0.8em;
   text-transform: uppercase;
 }
+
+
+/* #menu .pure-menu ul,
+#menu .pure-menu .menu-item-divided {
+  border-top: 1px solid #354755;
+} */
+
+
+/*  
 #menu li.pure-menu-selected a:hover,
 #menu li.pure-menu-selected a:focus {
   background: none;
-}
+} */
 
 /*Footer*/
-.footer,
+/* .footer,
 .navigation {
   margin: 2em 0 0 0;
   padding: 1em 0;
   text-align: center;
-}
-.footer {
+} */
+/* .footer {
   border-top: 1px solid #eee;
 }
 .footer a {
@@ -228,11 +238,10 @@ table {
 .footer .pure-menu a:hover,
 .footer .pure-menu a:focus {
   background: none;
-}
+} */
 
 /*Media Queries*/
 @media (min-width: 48em) {
-  
   .header-medium {
     margin: 10% 2em 0;
     text-align: left;
