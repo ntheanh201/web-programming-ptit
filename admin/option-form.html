@@ -1,157 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A layout example that shows off a blog page with a list of posts."
-    />
-    <title>Pure Admin Panel</title>
 
-    <link rel="stylesheet" href="assets/css/pure-min.css" />
-    <link rel="stylesheet" href="assets/css/pure-responsive-min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div id="layout" class="pure-g">
-      <div class="sidebar pure-u-1 pure-u-md-3-24">
-        <div id="menu">
-          <div class="pure-menu">
-            <p class="pure-menu-heading">
-              Pure Admin
-              <a href="login.html" class="pure-button button-xxsmall"
-                >OUT &raquo;</a
-              >
-            </p>
-            <ul class="pure-menu-list">
-              <li class="pure-menu-item">
-                <a href="dashboard.html" class="pure-menu-link">Dashboard</a>
-              </li>
-              <li class="pure-menu-item">
-                <a href="post-list.html" class="pure-menu-link">Posts List</a>
-              </li>
-              <li class="pure-menu-item">
-                <a href="post-form.html" class="pure-menu-link">Post Form</a>
-              </li>
-              <li class="pure-menu-item menu-item-divided">
-                <a href="option-list.html" class="pure-menu-link"
-                  >Option List</a
-                >
-              </li>
-              <li class="pure-menu-item pure-menu-selected">
-                <a href="option-form.html" class="pure-menu-link"
-                  >Option Form</a
-                >
-              </li>
-              <li class="pure-menu-item menu-item-divided">
-                <a href="profile.html" class="pure-menu-link">Profile</a>
-              </li>
-              <li class="menu-item-divided">
-                <a href="customer-list.html" class="pure-menu-link">Customer List</a>
-              </li>
-              <li class="menu-item-divided">
-                <a href="customer-profile.html" class="pure-menu-link">Customer Detail</a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin List Order</title>
+  <script src="https://kit.fontawesome.com/370103b70e.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/pure-min.css" />
+  <link rel="stylesheet" href="assets/css/pure-responsive-min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div id="layout" class="pure-g">
+    <div class="sidebar sidebar-admin-nav sidebar-common-mobie">
+      <div id="menu">
+        <div class="pure-menu">
+          <p class="pure-menu-heading">
+            Woof Admin
+            <a href="login.html" class="pure-button button-xxsmall">OUT</a>
+          </p>
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+              <a href="dashboard.html" class="pure-menu-link">Dashboard</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="post-list.html" class="pure-menu-link">Products List</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="post-form.html" class="pure-menu-link">Add Products</a>
+            </li>
+            <li class="pure-menu-item menu-item-divided pure-menu-selected">
+              <a href="option-list.html" class="pure-menu-link">Orders List</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="customer-list.html" class="pure-menu-link">Customer List</a>
+            </li>
+            <li class="menu-item-divided">
+              <a href="supplier-list.html" class="pure-menu-link">Supplier List</a>
+            </li>
+            <li class="pure-menu-item menu-item-divided">
+              <a href="profile.html" class="pure-menu-link">My Profile</a>
+            </li>
+
+          </ul>
         </div>
       </div>
+    </div>
 
-      <div class="content pure-u-1 pure-u-md-21-24">
-        <div class="header-small">
-          <div class="items">
-            <h1 class="subhead">Option Form</h1>
+    <div class="content">
+      <div class="header-small">
+        <div class="items">
+          <h1 class="subhead">Order Detail</h1>
 
-            <aside class="pure-message message-success">
-              <p><strong>SUCCESS</strong>: Success message.</p>
-            </aside>
-            <aside class="pure-message message-error">
-              <p><strong>ERROR</strong>: Error message.</p>
-            </aside>
-            <aside class="pure-message message-warning">
-              <p><strong>WARNING</strong>: Warning message.</p>
-            </aside>
-            <form
-              action="#"
-              method="post"
-              novalidate
-              autocomplete="off"
-              class="pure-form pure-form-stacked"
-            >
-              <fieldset>
-                <label for="name">Name</label>
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Name"
-                  class="pure-input-1"
-                  value=""
-                />
-
-                <label for="slug">Slug</label>
-                <input
-                  id="slug"
-                  type="text"
-                  placeholder="Slug"
-                  class="pure-input-1"
-                  value=""
-                  disabled
-                />
-
-                <h1 class="subhead">Option Values</h1>
-                <label for="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="Email"
-                  class="pure-input-1"
-                  value=""
-                />
-
-                <label for="page_limit">Page Limit</label>
-                <input
-                  id="page_limit"
-                  type="number"
-                  placeholder="Page Limit"
-                  class="pure-input-1"
-                  value=""
-                  min="10"
-                  max="100"
-                />
-
-                <input type="hidden" name="id" value="1" />
-                <button type="submit" class="pure-button button-success">
-                  Save
-                </button>
-              </fieldset>
-            </form>
+          <div id="order_shipping" class="order_shipping">
+            <div class="box-header">
+              <h4>Thông tin khách hàng</h4>
+            </div>
+            <div class="address note">
+              <p><i class="fa fa-user"></i> Dun</p>
+              <p><i class="fa fa-map-marker"></i>
+                109 Nguyễn Văn Trỗi, Hà Đông, Hà Nội
+              </p>
+              <p><i class="fa fa-phone"></i>0793220699</p>
+            </div>
           </div>
 
-          <div class="footer">
-            <div class="pure-menu pure-menu-horizontal">
-              <ul>
-                <li class="pure-menu-item">
-                  <a href="http://purecss.io/" class="pure-menu-link"
-                    >PURE CSS</a
-                  >
-                </li>
-                <li class="pure-menu-item">
-                  <a href="http://fikiruretgeci.com" class="pure-menu-link"
-                    >FIKIR URETGECI</a
-                  >
-                </li>
-                <li class="pure-menu-item">
-                  <a href="http://pure-themes.com" class="pure-menu-link"
-                    >PURE THEMES</a
-                  >
-                </li>
-              </ul>
+          <div class="order-detail-admin">
+            <div id="" class="ordrer_payment">
+              <div class="box-header">
+                <h4>Đơn hàng</h4>
+                <p>
+                  Mã đơn hàng:
+                  <i class="status_pending">
+                    <span class="span_pending" style="color: red">DH001</span>
+                  </i>
+
+                </p>
+                <p>
+                  Tên sản phẩm:
+                  <i class="status_pending">
+                    <span class="span_pending" style="color: red">Đồ ăn cho chó</span>
+                  </i>
+
+                </p>
+                <p>
+                  Đơn giá:
+                  <i class="status_pending">
+                    <span class="span_pending" style="color: red">5000000</span>
+                  </i>
+
+                </p>
+                <p>
+                  Số lượng:
+                  <i class="status_pending">
+                    <span class="span_pending" style="color: red">1</span>
+                  </i>
+
+                </p>
+                <p>
+                  Thành tiền:
+                  <i class="status_pending">
+                    <span class="span_pending" style="color: red">5000000</span>
+                  </i>
+
+                </p>
+                <p>
+                  Phí ship:
+                  <i class="status_pending">
+                    <span class="span_pending" style="color: red">40000</span>
+                  </i>
+
+                </p>
+                <p>
+                  Tổng:
+                  <i class="status_pending">
+                    <span class="span_pending" style="color: red">5400000</span>
+                  </i>
+
+                </p>
+              </div>
             </div>
+          </div>
+          <div id="order_shipping shipper-assign " class="order_shipping">
+            <div class="box-header">
+              <h4>Shipper</h4>
+            </div>
+            <div class="">
+            <form action="">
+              <label for="cars"><i class="fas fa-shipping-fast"></i>Shipper</label>
+              <select id="cars" name="cars">
+                <option value="volvo">Shipper1</option>
+                <option value="saab">Shipper2</option>
+                <option value="fiat">Shipper3</option>
+                <option value="audi">Shipper4</option>
+              </select>
+              <input type="submit">
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -103,6 +103,13 @@ button {
 .save-button{
   margin-top: 8px;
 }
+.order-detail-admin, .order_shipping{
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+
 
 /*  
 .pure-table,
